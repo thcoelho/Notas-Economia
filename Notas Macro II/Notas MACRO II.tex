@@ -1,0 +1,209 @@
+\documentclass[12pt,a4paper,oneside,brazil]{abntex2}
+
+% Pacotes que serão utilizados%
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage[backend = biber, style=abnt]{biblatex}
+\addbibresource{Referencias.bib}
+
+% Informações do documento %
+\title{Notas Macro II}
+\author{Thiago Oliveira Coelho}
+\date{\today}
+
+\begin{document}
+\pagestyle{headings}
+\pagenumbering{arabic}
+\maketitle
+\begin{center}
+Notas baseadas em \cite{blanchard} e \cite{rudiger}
+\end{center}
+\tableofcontents
+\chapter{1ª Unidade}
+\section{Curva de Phillips}
+A curva de phillips representa a relação inversa entre desemprego e inflação.
+Possui duas formas:
+\begin{itemize}
+\item Original: $\pi_t = (\mu + z) - \alpha u_t$;
+\item Expandida : $\pi_t - \pi^e  =  - \alpha (u_t - u_n)$.
+\end{itemize}
+Aonde: \begin{itemize}
+\item  $\pi_t$: Inflação no período t;
+\item $\pi^e$ Inflação esperada ou inflação do período passado;
+\item $\alpha$: Coeficiente do impacto do desemprego na inflação;
+\item $u_t$: Desemprego no período t;
+\item $u_n$: Desemprego natural.
+\end{itemize}
+A equação original foi descoberta  por A.W Phillips numa época em que a inflação flutuava sempre ao redor do zero, ou seja, não havia inflação real. A expandida leva em conta a taxa de crescimento da inflação, o que a torna muito mais aplicável ao mundo moderno.
+Alguns pontos:
+\begin{itemize}
+\item A diferença entre desemprego e desemprego natural $u - u_n$ é chamada hiato do desemprego;
+\item A taxa natural de desemprego também pode ser chamada de \emph{taxa não aceleradora de inflação};
+\item As expectativas de inflação neste modelo são adaptativas, ou seja: $\pi^e_{t+1} = \pi_t$;
+\item A taxa de desemprego natural depende de variáveis muito abrangentes e institucionais: $\mu$ e $z$ o que fazem com que esta varie muito de país para país.
+\end{itemize}
+\clearpage
+\section{Lei de Okun}
+Teoria de Arthur Okun que relaciona desemprego ao PIB. É dada pela equação:
+\[u_t - u_t-1 = -\beta (gy_t - \overline{gy})\]
+Aonde: \begin{itemize}
+\item $u_t$: Desemprego no período t;
+\item $u_{t-1}$: Desemprego no período t-1;
+\item $\beta$: Coeficiente de impacto da renda no desemprego;
+\item $gy_t$ = Taxa de crescimento da renda no período t;
+\item $\overline{gy}$: Taxa de crescimento normal [crescimento da população + crescimento da produtividade].
+\end{itemize}
+
+\section{Taxa de crescimento do produto}
+A relação de demanda agregada fica:
+\[ Y_t = \gamma \frac{M_t}{P_t}\]
+Essa equação nos diz que a demanda de bens é proporcional ao estoque real de moeda. Esse impacto é ditado pelo coeficiente $\gamma$. Podemos também trabalhar com taxas de crescimento para simplificação:
+\[gy_t = gm_t - \pi_t\] 
+Aonde:
+\begin{itemize}
+\item $gy_t$: Taxa de crescimento da renda no período t;
+\item $gm_t$: Taxa de expansão monetária;
+\item $\pi_t$: Inflação no período t.
+\end{itemize}
+
+\section{Modelo completo e Longo Prazo}
+O modelo com as três equações será:
+\begin{itemize}
+\item $\pi_t - \pi^e  =  - \alpha (u_t - u_n)$;
+\item $u_t - u_{t-1} = - \beta (gy_t - \overline{gy})$;
+\item $gy_t = gm_t - \pi_t$.
+\end{itemize}
+Perceba a ausência de política fiscal. Neste modelo a política governamental tem de ser monetária, mas ela funciona em cascata: Ao se utilizar a política monetária para influenciar a taxa de crescimento, esta por vez influencia a taxa de desemprego, que influencia a taxa de inflação.
+O longo/médio prazo é caracterizado por:
+\begin{itemize}
+\item Para analisar o médio prazo primeiro assumimos que o banco central deixará a taxa de crescimento constante;
+\item O desemprego terá sempre variação zero, ou seja, tenderá sempre a voltar a sua taxa natural;
+\item O item acima implica então que a taxa de crescimento também tenderá a um valor único, que seria o normal;
+\item A consequência disso é que \emph{no longo prazo a inflação sempre será um fenômeno monetário};
+\item No longo prazo a taxa de expansão monetária é neutra: não implica mudanças no produto ou desemprego.
+\end{itemize}
+
+\section{Fixação de salários}
+A indexação fixa a evolução dos salários de acordo com a evolução da inflação. Nossa curva de phillips fica da seguinte maneira:
+\[ \pi_t = \lambda \pi_t + (1 + \lambda) \pi_{t-1} - \alpha (u_t - u_n) \]
+Sendo $\lambda$ a quantidade a proporção de salários indexados: estes se ajustam junto com a inflação corrente. Se  $\lambda = 0$ então todos os salários são fixados na inflação passada e a equação se comporta como a phillips normal. Se $\lambda >0$ então:
+\[ \pi_t - \pi_{t-1} = - \frac{\alpha}{1- \lambda} (u_t - u_n) \]
+É possível perceber que neste caso o impacto do desemprego sobre a inflação será potencializado. \emph{Quanto maior a proporção de contratos indexados maior o efeito da taxa de desemprego sobre a variação da inflação.}
+
+\section{Desinflação}
+Caso haja necessidade de reduzir o crescimento da inflação, como desenhar políticas para tal? A curva de phillips deixa explícito que para desinflarcionarmos a economia é preciso certo nível de desemprego acima do natural.  A quantidade de desemprego acima do natural que teremos que suportar é constante, o que temos de decidir é como distribuir esse desemprego adicional ao longo do tempo.
+\begin{itemize}
+\item Ano-ponto excesso de desemprego: Hiato de desemprego de um ponto percentual por ano;
+\item Taxa de sacrifício: Número de anos ponto necessários para baixar a inflação em 1\%.
+\[ \frac{1}{\alpha} = \frac{u_t - u_n}{\pi_t - \pi_t-1}\]
+\end{itemize}
+
+\section{Adendos a teoria}
+\subsection{Crítica de Lucas}
+Robert Lucas e Thomas Sargent notam que os agentes deveriam formar expectativas de acordo com toda informação disponível, não somente com uma média ponderada das ocorrências passadas. Se os agentes fossem convencidos de que a política desinflacionário seria bem sucedidada, não seria necessário grande aumento do desemprego pois as expectativas iriam convergindo com a inflação do próximo período. O principal fator para bom funcionamento de tal política então seria a \emph{credibilidade}.
+\subsection{Rigidez nominal e contratos}
+Stanley e Fischer notam que muitos dos preços da economia moderna são fixados em contratos e não se reajustam com facilidade. Por isso uma diminuição muito rápida da inflação levaria a desemprego, já que a inflação esperada está embutida nos contratos salariais vigentes.
+\subsection{Laurence Ball}
+Ball avalia mais de 65 episódios diferentes de desinflações e chega nos seguintes resultados:
+\begin{itemize}
+\item Desinflação sempre gerará maior desemprego por certo tempo;
+\item Desinflações mais rápidas estão ligadas a menor taxa de sacrifício;
+\item Razões de sacrifício são menores em países com contratos salariais mais curtos.
+\end{itemize}
+
+\chapter{2ª Unidade}
+\section{Economia aberta}
+Toda economia aberta pode se relacionar com outras economias por dois canais: o de comércio e o de finanças. Para compararmos os mercados de bens utilizamos as taxas de câmbio, e para o financeiro, é preciso comparar o câmbio e também as taxas de juros oferecidas.
+\subsection{Taxa de câmbio}
+O câmbio pode ser flutuante: quando seu valor varia livremente; ou pode ser fixo. Na realidade, muitos bancos centrais deixam a taxa flutuar mas tentam influenciar ela por compra e venda de reservas, isso caracateriza \emph{flutuação suja}. Quanto ao câmbio fixo, Dornbusch explicita bem o uso deste: 
+\begin{quotation}
+"Em um sistema de câmbio fixo, os bancos centrais estrangeiros estão prontos para
+comprar e vender suas moedas a um preço fixo em relação ao dólar." \cite[p.274]{rudiger}
+\end{quotation}
+A taxa de câmbio é dividida em taxa nominal e real:
+\subsubsection{Taxa nominal}
+A taxa nominal compara os preços relativos de duas moedas e é expressa por $E$. Há no entanto o problema das notações:
+\begin{itemize}
+\item  Em notação brasileira, é expressa no sentido de: quanto da moeda local é necessária para comprar uma moeda estrangeira. EX: 4 reais = 1 dólar.
+\item Na notação americana, a comparação é no sentido de quanto de dólar é possível se comprar com uma unidade de moeda estangeira. EX: 0,25 dólar = 1 real
+\end{itemize}
+Portanto, para se obter o valor de reais em dólar, se divide a quantidade em reais pela taxa nominal:
+\[ USD = \frac{Qnt. Reais}{E}\]
+\subsubsection{Taxa Real}
+A taxa real de câmbio irá levar em conta  nível de preços entre as economias. Por motivos metodológicos óbvios, a taxa real é de difícil cálculo. É dada pela notação $\epsilon$
+\[ \epsilon = E \frac{P^*}{P}\]
+Sendo:
+\begin{itemize}
+\item $P^*$: Nível de preços da economia estrangeira;
+\item $P$: Nível de preços da economia local.
+\end{itemize}
+\subsection{Paridade da taxa de juros}
+Numa economia aberta os agentes terão a opção de comprar títulos estrangeiros. Para compararmos os títulos locais e estrangeiros primeiro utilizaremos duas hipóteses:
+\begin{itemize}
+\item Mobilidade de capital é perfeita: Não há custos de transação adicionais para compra de títulos estrangeiros;
+\item Não há diferença nos riscos tomados ao investir em títulos estrangeiros.
+\end{itemize}
+Para comparação entre títulos utilizamos a equação de paridade da taxa de juros:
+\[ i = i^* + \frac{E^e - E_t}{E_t} \]
+Sendo: 
+\begin{itemize}
+\item $i$: Taxa de juros local;
+\item $i^*$: Taxa de juros estrangeira;
+\item $Eê$: Expectativa da taxa nominal de câmbio para o próximo período;
+\item $E_t$: Taxa nominal de câmbio atual.
+\end{itemize}
+Essa equação irá nos dizer que para definirmos o título superior não basta somente comparar taxas de juros, mas também as alterações previstas na taxa de câmbio.
+\subsection{Câmbio fixo}
+No câmbio fixo não faz sentido discutirmos expectativas, neste caso: $ \overline{E} = E_{t} = E_{t+1}$, substituindo na equação de paridade de juros chegamos na conclusão de que:
+
+\begin{equation}\label{Fixo}
+i = i^{*} + \frac{E - E}{E} \Rightarrow  i = i^{*}
+\end{equation}
+Isso significa que o banco central perde a sua autonomia quanto a política monetária, e trabalha para somente para manter a taxa de juros interna igual a taxa externa. Isso significa também que mudanças na taxa externa agora afetarão a demanda doméstica, já que $I$ é função de $i$.
+
+\subsection{Mercado de bens numa economia aberta}
+Como agora bens de consumo podem ser domésticos ou estrangeiros, é necessário redefinirmos a relação IS. Primeiro definimos as partes que irão compor a relação:
+\begin{itemize}
+\item Demanda doméstica ou gasto dos residentes nacionais: $D_D = C + I + G$;
+\item Demanda por bens domésticos ou gastos em bens nacionais: $A_A = D_D - M \epsilon$;
+\end{itemize}
+Juntando os dois temos a demanda doméstica:
+\[ Z_Z = C (Y - T) + I ( Y, i) + G + X (Y, \epsilon^+) - M (Y, \epsilon^-) \]
+Podemos simplificar a equação introduzindo o conceito de exportações líquidas:
+\[ NX = X - M \rightarrow NX = NX(Y, Y^{*}, \epsilon) \]
+Como $\epsilon$ influencia importações negativamente e exportações positivamente, para definirmos qual o impacto da taxa de juros real em NX pressupomos que a condição de Marshall - Lerner é satisfeita:
+\[ \frac{d NX}{d \epsilon} > 0\]
+Temos assim a relação simplificada:
+\[ Z_Z = D_D ( Y, i ) + NX (Y, Y^{*}, \epsilon) \]
+
+\subsection{Poupança}
+A poupança nos modelos antigos era igual ao investimento e seu valor era a soma da poupança privada com a poupança governamental. Porém se utilizarmos dados reais e compararmos investimento com poupança privada mais poupança governamental, os números não batem. Isso se dá pela falta da poupança externa na relação:
+\[ Y  = C + I + G + NX \rightarrow Y - T - C  = I + G + NX\]
+\[ Y - T -C = S \rightarrow I = S + (T -G) - NX \]
+
+\section{Modelo completo}
+Levando em conta as seguintes simplificações:
+\[ \frac{P^{*}}{P} = 1 \Rightarrow  \epsilon = E\]
+O modelo completo será:
+\begin{equation}\label{IS}
+Y = C (Y - T) + \overline{G} + I  (Y, i ) + NX ( Y, Y^{*}, \frac{E^e}{1 + i - i^{*}}
+\end{equation}
+\begin{equation}\label{LM}
+\frac{M}{P} = Y L (i)
+\end{equation}
+\begin{equation}\label{E}
+E = \frac{E^e}{1 + i - i^{*}}
+\end{equation}
+
+\subsection{Políticas macroeconômicas}
+Levando em conta políticas expansionistas:
+\[ G \uparrow  \rightarrow Y \uparrow i \uparrow \rightarrow E\downarrow\]
+\[ M \uparrow \rightarrow Y \uparrow \rightarrow i \downarrow \rightarrow E \uparrow\]
+
+\printbibliography
+\end{document}

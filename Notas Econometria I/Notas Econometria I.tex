@@ -9,6 +9,7 @@
 \usepackage{graphicx}
 \usepackage{microtype}
 \usepackage{wrapfig}
+\usepackage{amsmath}
 \usepackage[backend = biber, style=abnt]{biblatex}
 \addbibresource{Referencias.bib}
 
@@ -185,8 +186,36 @@ SQT = SQE + SQR
  \end{enumerate}
  
  Se mudarmos a forma funcional, alteramos o valor do R quadrado.
-\printbibliography
 
 \chapter{2ª Unidade}
-\section{Variância nos estimadores}
+
+\section{Eliminação de viés nos estimadores} % (fold)
+\label{sec:eliminacao_de_vies_nos_estimadores}
+
+Algumas das precauções que podem ser tomadas para termos estimadores não enviesados:
+
+\begin{enumerate}
+	\item Amostragem aleatório: é aquela que representa a população inteira, e não somente grupos específicos. Para isso todos os membros de  população tem de ter alguma chance de participar da amostra;
+	\item Auto seleção: quando partes da população pode intencionalmente decidir participar da amostragem;
+	\item Média condicional de erro igual a zero: $E(u|X) = 0$. Não há correlação entre o erro e X, isso é importante para garantirmos o efeito ceteris paribus;
+	\item As variáveis X e Y não podem ter somente um único valor para toda a amostra;
+
+\end{enumerate}
+
+Suponha que desejamos estimar um parâmetro populacional $\theta$. Seja $\hat{\theta}$ o estimador de $\theta$, $\hat{\theta}$ não seria viesado se:
+\begin{equation}
+    \label{vies}
+  E(\hat{\theta}) = \theta
+\end{equation}
+
+O \emph{MQO} garante que dadas as inúmeras amostras diferentes possíveis a partir da população, os estimadores não são viesados. Contanto que as quatro hipóteses passadas sejam respeitadas:
+
+\begin{align}
+    E(\hat{\beta_0}) = \beta_0 \\
+    E(\hat{\beta_0}) = \beta_1
+\end{align} 
+% section eliminação_de_viés_nos_estimadores (end)
+
+\printbibliography
+
 \end{document}

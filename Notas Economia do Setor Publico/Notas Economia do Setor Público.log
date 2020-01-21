@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.17)  20 JAN 2020 14:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.17)  20 JAN 2020 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"Notas Econometria I.tex"
-(./Notas Econometria I.tex
+**"Notas Economia do Setor Público.tex"
+(./Notas Economia do Setor Público.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
@@ -960,74 +960,16 @@ File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
 \WF@everypar=\toks27
 Package: wrapfig 2003/01/31  v 3.6
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip258
-
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks28
-\ex@=\dimen160
-))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen161
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
-)
-\inf@bad=\count167
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count168
-\leftroot@=\count169
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count170
-\DOTSCASE@=\count171
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box31
-\strutbox@=\box32
-\big@size=\dimen162
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count172
-\c@MaxMatrixCols=\count173
-\dotsspace@=\muskip11
-\c@parentequation=\count174
-\dspbrk@lvl=\count175
-\tag@help=\toks29
-\row@=\count176
-\column@=\count177
-\maxfields@=\count178
-\andhelp@=\toks30
-\eqnshift@=\dimen163
-\alignsep@=\dimen164
-\tagshift@=\dimen165
-\tagwidth@=\dimen166
-\totwidth@=\dimen167
-\lineht@=\dimen168
-\@envbody=\toks31
-\multlinegap=\skip259
-\multlinetaggap=\skip260
-\mathdisplay@stack=\toks32
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2017/12/19 v3.10 programmable bibliographies (PK/JW/AB)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count179
+\etb@tempcnta=\count167
 )
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count180
+\lrq@indent=\count168
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -1035,61 +977,61 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write4
-\integerpart=\count181
-\decimalpart=\count182
+\integerpart=\count169
+\decimalpart=\count170
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count183
-\c@listtotal=\count184
-\c@listcount=\count185
-\c@liststart=\count186
-\c@liststop=\count187
-\c@citecount=\count188
-\c@citetotal=\count189
-\c@multicitecount=\count190
-\c@multicitetotal=\count191
-\c@instcount=\count192
-\c@maxnames=\count193
-\c@minnames=\count194
-\c@maxitems=\count266
-\c@minitems=\count267
-\c@citecounter=\count268
-\c@savedcitecounter=\count269
-\c@uniquelist=\count270
-\c@uniquename=\count271
-\c@refsection=\count272
-\c@refsegment=\count273
-\c@maxextratitle=\count274
-\c@maxextratitleyear=\count275
-\c@maxextradate=\count276
-\c@maxextraalpha=\count277
-\c@abbrvpenalty=\count278
-\c@highnamepenalty=\count279
-\c@lownamepenalty=\count280
-\c@maxparens=\count281
-\c@parenlevel=\count282
-\blx@tempcnta=\count283
-\blx@tempcntb=\count284
-\blx@tempcntc=\count285
-\blx@maxsection=\count286
-\blx@maxsegment@0=\count287
-\blx@notetype=\count288
-\blx@parenlevel@text=\count289
-\blx@parenlevel@foot=\count290
-\blx@sectionciteorder@0=\count291
-\labelnumberwidth=\skip261
-\labelalphawidth=\skip262
-\biblabelsep=\skip263
-\bibnamesep=\skip264
-\bibinitsep=\skip265
-\bibparsep=\skip266
-\bibhang=\skip267
+\c@tabx@nest=\count171
+\c@listtotal=\count172
+\c@listcount=\count173
+\c@liststart=\count174
+\c@liststop=\count175
+\c@citecount=\count176
+\c@citetotal=\count177
+\c@multicitecount=\count178
+\c@multicitetotal=\count179
+\c@instcount=\count180
+\c@maxnames=\count181
+\c@minnames=\count182
+\c@maxitems=\count183
+\c@minitems=\count184
+\c@citecounter=\count185
+\c@savedcitecounter=\count186
+\c@uniquelist=\count187
+\c@uniquename=\count188
+\c@refsection=\count189
+\c@refsegment=\count190
+\c@maxextratitle=\count191
+\c@maxextratitleyear=\count192
+\c@maxextradate=\count193
+\c@maxextraalpha=\count194
+\c@abbrvpenalty=\count266
+\c@highnamepenalty=\count267
+\c@lownamepenalty=\count268
+\c@maxparens=\count269
+\c@parenlevel=\count270
+\blx@tempcnta=\count271
+\blx@tempcntb=\count272
+\blx@tempcntc=\count273
+\blx@maxsection=\count274
+\blx@maxsegment@0=\count275
+\blx@notetype=\count276
+\blx@parenlevel@text=\count277
+\blx@parenlevel@foot=\count278
+\blx@sectionciteorder@0=\count279
+\labelnumberwidth=\skip258
+\labelalphawidth=\skip259
+\biblabelsep=\skip260
+\bibnamesep=\skip261
+\bibinitsep=\skip262
+\bibparsep=\skip263
+\bibhang=\skip264
 \blx@bcfin=\read2
 \blx@bcfout=\write5
-\c@mincomprange=\count292
-\c@maxcomprange=\count293
-\c@mincompwidth=\count294
+\c@mincomprange=\count280
+\c@maxcomprange=\count281
+\c@mincompwidth=\count282
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1098,80 +1040,80 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'abnt.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count295
-\c@savedafterword=\count296
-\c@annotator=\count297
-\c@savedannotator=\count298
-\c@author=\count299
-\c@savedauthor=\count300
-\c@bookauthor=\count301
-\c@savedbookauthor=\count302
-\c@commentator=\count303
-\c@savedcommentator=\count304
-\c@editor=\count305
-\c@savededitor=\count306
-\c@editora=\count307
-\c@savededitora=\count308
-\c@editorb=\count309
-\c@savededitorb=\count310
-\c@editorc=\count311
-\c@savededitorc=\count312
-\c@foreword=\count313
-\c@savedforeword=\count314
-\c@holder=\count315
-\c@savedholder=\count316
-\c@introduction=\count317
-\c@savedintroduction=\count318
-\c@namea=\count319
-\c@savednamea=\count320
-\c@nameb=\count321
-\c@savednameb=\count322
-\c@namec=\count323
-\c@savednamec=\count324
-\c@translator=\count325
-\c@savedtranslator=\count326
-\c@shortauthor=\count327
-\c@savedshortauthor=\count328
-\c@shorteditor=\count329
-\c@savedshorteditor=\count330
-\c@labelname=\count331
-\c@savedlabelname=\count332
-\c@institution=\count333
-\c@savedinstitution=\count334
-\c@lista=\count335
-\c@savedlista=\count336
-\c@listb=\count337
-\c@savedlistb=\count338
-\c@listc=\count339
-\c@savedlistc=\count340
-\c@listd=\count341
-\c@savedlistd=\count342
-\c@liste=\count343
-\c@savedliste=\count344
-\c@listf=\count345
-\c@savedlistf=\count346
-\c@location=\count347
-\c@savedlocation=\count348
-\c@organization=\count349
-\c@savedorganization=\count350
-\c@origlocation=\count351
-\c@savedoriglocation=\count352
-\c@origpublisher=\count353
-\c@savedorigpublisher=\count354
-\c@publisher=\count355
-\c@savedpublisher=\count356
-\c@language=\count357
-\c@savedlanguage=\count358
-\c@origlanguage=\count359
-\c@savedoriglanguage=\count360
-\c@pageref=\count361
-\c@savedpageref=\count362
-\shorthandwidth=\skip268
-\shortjournalwidth=\skip269
-\shortserieswidth=\skip270
-\shorttitlewidth=\skip271
-\shortauthorwidth=\skip272
-\shorteditorwidth=\skip273
+\c@afterword=\count283
+\c@savedafterword=\count284
+\c@annotator=\count285
+\c@savedannotator=\count286
+\c@author=\count287
+\c@savedauthor=\count288
+\c@bookauthor=\count289
+\c@savedbookauthor=\count290
+\c@commentator=\count291
+\c@savedcommentator=\count292
+\c@editor=\count293
+\c@savededitor=\count294
+\c@editora=\count295
+\c@savededitora=\count296
+\c@editorb=\count297
+\c@savededitorb=\count298
+\c@editorc=\count299
+\c@savededitorc=\count300
+\c@foreword=\count301
+\c@savedforeword=\count302
+\c@holder=\count303
+\c@savedholder=\count304
+\c@introduction=\count305
+\c@savedintroduction=\count306
+\c@namea=\count307
+\c@savednamea=\count308
+\c@nameb=\count309
+\c@savednameb=\count310
+\c@namec=\count311
+\c@savednamec=\count312
+\c@translator=\count313
+\c@savedtranslator=\count314
+\c@shortauthor=\count315
+\c@savedshortauthor=\count316
+\c@shorteditor=\count317
+\c@savedshorteditor=\count318
+\c@labelname=\count319
+\c@savedlabelname=\count320
+\c@institution=\count321
+\c@savedinstitution=\count322
+\c@lista=\count323
+\c@savedlista=\count324
+\c@listb=\count325
+\c@savedlistb=\count326
+\c@listc=\count327
+\c@savedlistc=\count328
+\c@listd=\count329
+\c@savedlistd=\count330
+\c@liste=\count331
+\c@savedliste=\count332
+\c@listf=\count333
+\c@savedlistf=\count334
+\c@location=\count335
+\c@savedlocation=\count336
+\c@organization=\count337
+\c@savedorganization=\count338
+\c@origlocation=\count339
+\c@savedoriglocation=\count340
+\c@origpublisher=\count341
+\c@savedorigpublisher=\count342
+\c@publisher=\count343
+\c@savedpublisher=\count344
+\c@language=\count345
+\c@savedlanguage=\count346
+\c@origlanguage=\count347
+\c@savedoriglanguage=\count348
+\c@pageref=\count349
+\c@savedpageref=\count350
+\shorthandwidth=\skip265
+\shortjournalwidth=\skip266
+\shortserieswidth=\skip267
+\shorttitlewidth=\skip268
+\shortauthorwidth=\skip269
+\shorteditorwidth=\skip270
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1183,13 +1125,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count363
-\c@textcitetotal=\count364
-\c@textcitemaxnames=\count365
-\c@biburlnumpenalty=\count366
-\c@biburlucpenalty=\count367
-\c@biburllcpenalty=\count368
-\c@smartand=\count369
+\c@textcitecount=\count351
+\c@textcitetotal=\count352
+\c@textcitemaxnames=\count353
+\c@biburlnumpenalty=\count354
+\c@biburlucpenalty=\count355
+\c@biburllcpenalty=\count356
+\c@smartand=\count357
 )
 Package biblatex Info: Trying to load bibliography style 'abnt'...
 Package biblatex Info: ... file 'abnt.bbx' found.
@@ -1203,159 +1145,159 @@ Package: expl3 2018/02/21 L3 programming layer (loader)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2018/02/21 L3 programming layer (code)
-\c_max_int=\count370
-\l_tmpa_int=\count371
-\l_tmpb_int=\count372
-\g_tmpa_int=\count373
-\g_tmpb_int=\count374
-\g__intarray_font_int=\count375
-\g__prg_map_int=\count376
-\c_log_iow=\count377
-\l_iow_line_count_int=\count378
-\l__iow_line_target_int=\count379
-\l__iow_one_indent_int=\count380
-\l__iow_indent_int=\count381
-\c_zero_dim=\dimen169
-\c_max_dim=\dimen170
-\l_tmpa_dim=\dimen171
-\l_tmpb_dim=\dimen172
-\g_tmpa_dim=\dimen173
-\g_tmpb_dim=\dimen174
-\c_zero_skip=\skip274
-\c_max_skip=\skip275
-\l_tmpa_skip=\skip276
-\l_tmpb_skip=\skip277
-\g_tmpa_skip=\skip278
-\g_tmpb_skip=\skip279
-\c_zero_muskip=\muskip12
-\c_max_muskip=\muskip13
-\l_tmpa_muskip=\muskip14
-\l_tmpb_muskip=\muskip15
-\g_tmpa_muskip=\muskip16
-\g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count382
-\c__fp_leading_shift_int=\count383
-\c__fp_middle_shift_int=\count384
-\c__fp_trailing_shift_int=\count385
-\c__fp_big_leading_shift_int=\count386
-\c__fp_big_middle_shift_int=\count387
-\c__fp_big_trailing_shift_int=\count388
-\c__fp_Bigg_leading_shift_int=\count389
-\c__fp_Bigg_middle_shift_int=\count390
-\c__fp_Bigg_trailing_shift_int=\count391
-\c__fp_rand_size_int=\count392
-\c__fp_rand_four_int=\count393
-\c__fp_rand_eight_int=\count394
-\l__sort_length_int=\count395
-\l__sort_min_int=\count396
-\l__sort_top_int=\count397
-\l__sort_max_int=\count398
-\l__sort_true_max_int=\count399
-\l__sort_block_int=\count400
-\l__sort_begin_int=\count401
-\l__sort_end_int=\count402
-\l__sort_A_int=\count403
-\l__sort_B_int=\count404
-\l__sort_C_int=\count405
-\l__tl_build_start_index_int=\count406
-\l__tl_build_index_int=\count407
-\l__tl_analysis_normal_int=\count408
-\l__tl_analysis_index_int=\count409
-\l__tl_analysis_nesting_int=\count410
-\l__tl_analysis_type_int=\count411
-\l__regex_internal_a_int=\count412
-\l__regex_internal_b_int=\count413
-\l__regex_internal_c_int=\count414
-\l__regex_balance_int=\count415
-\l__regex_group_level_int=\count416
-\l__regex_mode_int=\count417
-\c__regex_cs_in_class_mode_int=\count418
-\c__regex_cs_mode_int=\count419
-\l__regex_catcodes_int=\count420
-\l__regex_default_catcodes_int=\count421
-\c__regex_catcode_D_int=\count422
-\c__regex_catcode_S_int=\count423
-\c__regex_catcode_L_int=\count424
-\c__regex_catcode_O_int=\count425
-\c__regex_catcode_A_int=\count426
-\c__regex_all_catcodes_int=\count427
-\l__regex_show_lines_int=\count428
-\l__regex_min_state_int=\count429
-\l__regex_max_state_int=\count430
-\l__regex_left_state_int=\count431
-\l__regex_right_state_int=\count432
-\l__regex_capturing_group_int=\count433
-\l__regex_min_pos_int=\count434
-\l__regex_max_pos_int=\count435
-\l__regex_curr_pos_int=\count436
-\l__regex_start_pos_int=\count437
-\l__regex_success_pos_int=\count438
-\l__regex_curr_char_int=\count439
-\l__regex_curr_catcode_int=\count440
-\l__regex_last_char_int=\count441
-\l__regex_case_changed_char_int=\count442
-\l__regex_curr_state_int=\count443
-\l__regex_step_int=\count444
-\l__regex_min_active_int=\count445
-\l__regex_max_active_int=\count446
-\l__regex_replacement_csnames_int=\count447
-\l__regex_match_count_int=\count448
-\l__regex_min_submatch_int=\count449
-\l__regex_submatch_int=\count450
-\l__regex_zeroth_submatch_int=\count451
-\g__regex_trace_regex_int=\count452
-\c_empty_box=\box33
-\l_tmpa_box=\box34
-\l_tmpb_box=\box35
-\g_tmpa_box=\box36
-\g_tmpb_box=\box37
-\l__box_top_dim=\dimen175
-\l__box_bottom_dim=\dimen176
-\l__box_left_dim=\dimen177
-\l__box_right_dim=\dimen178
-\l__box_top_new_dim=\dimen179
-\l__box_bottom_new_dim=\dimen180
-\l__box_left_new_dim=\dimen181
-\l__box_right_new_dim=\dimen182
-\l__box_internal_box=\box38
-\l__coffin_internal_box=\box39
-\l__coffin_internal_dim=\dimen183
-\l__coffin_offset_x_dim=\dimen184
-\l__coffin_offset_y_dim=\dimen185
-\l__coffin_x_dim=\dimen186
-\l__coffin_y_dim=\dimen187
-\l__coffin_x_prime_dim=\dimen188
-\l__coffin_y_prime_dim=\dimen189
-\c_empty_coffin=\box40
-\l__coffin_aligned_coffin=\box41
-\l__coffin_aligned_internal_coffin=\box42
-\l_tmpa_coffin=\box43
-\l_tmpb_coffin=\box44
-\l__coffin_display_coffin=\box45
-\l__coffin_display_coord_coffin=\box46
-\l__coffin_display_pole_coffin=\box47
-\l__coffin_display_offset_dim=\dimen190
-\l__coffin_display_x_dim=\dimen191
-\l__coffin_display_y_dim=\dimen192
-\l__coffin_bounding_shift_dim=\dimen193
-\l__coffin_left_corner_dim=\dimen194
-\l__coffin_right_corner_dim=\dimen256
-\l__coffin_bottom_corner_dim=\dimen257
-\l__coffin_top_corner_dim=\dimen258
-\l__coffin_scaled_total_height_dim=\dimen259
-\l__coffin_scaled_width_dim=\dimen260
+\c_max_int=\count358
+\l_tmpa_int=\count359
+\l_tmpb_int=\count360
+\g_tmpa_int=\count361
+\g_tmpb_int=\count362
+\g__intarray_font_int=\count363
+\g__prg_map_int=\count364
+\c_log_iow=\count365
+\l_iow_line_count_int=\count366
+\l__iow_line_target_int=\count367
+\l__iow_one_indent_int=\count368
+\l__iow_indent_int=\count369
+\c_zero_dim=\dimen160
+\c_max_dim=\dimen161
+\l_tmpa_dim=\dimen162
+\l_tmpb_dim=\dimen163
+\g_tmpa_dim=\dimen164
+\g_tmpb_dim=\dimen165
+\c_zero_skip=\skip271
+\c_max_skip=\skip272
+\l_tmpa_skip=\skip273
+\l_tmpb_skip=\skip274
+\g_tmpa_skip=\skip275
+\g_tmpb_skip=\skip276
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count370
+\c__fp_leading_shift_int=\count371
+\c__fp_middle_shift_int=\count372
+\c__fp_trailing_shift_int=\count373
+\c__fp_big_leading_shift_int=\count374
+\c__fp_big_middle_shift_int=\count375
+\c__fp_big_trailing_shift_int=\count376
+\c__fp_Bigg_leading_shift_int=\count377
+\c__fp_Bigg_middle_shift_int=\count378
+\c__fp_Bigg_trailing_shift_int=\count379
+\c__fp_rand_size_int=\count380
+\c__fp_rand_four_int=\count381
+\c__fp_rand_eight_int=\count382
+\l__sort_length_int=\count383
+\l__sort_min_int=\count384
+\l__sort_top_int=\count385
+\l__sort_max_int=\count386
+\l__sort_true_max_int=\count387
+\l__sort_block_int=\count388
+\l__sort_begin_int=\count389
+\l__sort_end_int=\count390
+\l__sort_A_int=\count391
+\l__sort_B_int=\count392
+\l__sort_C_int=\count393
+\l__tl_build_start_index_int=\count394
+\l__tl_build_index_int=\count395
+\l__tl_analysis_normal_int=\count396
+\l__tl_analysis_index_int=\count397
+\l__tl_analysis_nesting_int=\count398
+\l__tl_analysis_type_int=\count399
+\l__regex_internal_a_int=\count400
+\l__regex_internal_b_int=\count401
+\l__regex_internal_c_int=\count402
+\l__regex_balance_int=\count403
+\l__regex_group_level_int=\count404
+\l__regex_mode_int=\count405
+\c__regex_cs_in_class_mode_int=\count406
+\c__regex_cs_mode_int=\count407
+\l__regex_catcodes_int=\count408
+\l__regex_default_catcodes_int=\count409
+\c__regex_catcode_D_int=\count410
+\c__regex_catcode_S_int=\count411
+\c__regex_catcode_L_int=\count412
+\c__regex_catcode_O_int=\count413
+\c__regex_catcode_A_int=\count414
+\c__regex_all_catcodes_int=\count415
+\l__regex_show_lines_int=\count416
+\l__regex_min_state_int=\count417
+\l__regex_max_state_int=\count418
+\l__regex_left_state_int=\count419
+\l__regex_right_state_int=\count420
+\l__regex_capturing_group_int=\count421
+\l__regex_min_pos_int=\count422
+\l__regex_max_pos_int=\count423
+\l__regex_curr_pos_int=\count424
+\l__regex_start_pos_int=\count425
+\l__regex_success_pos_int=\count426
+\l__regex_curr_char_int=\count427
+\l__regex_curr_catcode_int=\count428
+\l__regex_last_char_int=\count429
+\l__regex_case_changed_char_int=\count430
+\l__regex_curr_state_int=\count431
+\l__regex_step_int=\count432
+\l__regex_min_active_int=\count433
+\l__regex_max_active_int=\count434
+\l__regex_replacement_csnames_int=\count435
+\l__regex_match_count_int=\count436
+\l__regex_min_submatch_int=\count437
+\l__regex_submatch_int=\count438
+\l__regex_zeroth_submatch_int=\count439
+\g__regex_trace_regex_int=\count440
+\c_empty_box=\box31
+\l_tmpa_box=\box32
+\l_tmpb_box=\box33
+\g_tmpa_box=\box34
+\g_tmpb_box=\box35
+\l__box_top_dim=\dimen166
+\l__box_bottom_dim=\dimen167
+\l__box_left_dim=\dimen168
+\l__box_right_dim=\dimen169
+\l__box_top_new_dim=\dimen170
+\l__box_bottom_new_dim=\dimen171
+\l__box_left_new_dim=\dimen172
+\l__box_right_new_dim=\dimen173
+\l__box_internal_box=\box36
+\l__coffin_internal_box=\box37
+\l__coffin_internal_dim=\dimen174
+\l__coffin_offset_x_dim=\dimen175
+\l__coffin_offset_y_dim=\dimen176
+\l__coffin_x_dim=\dimen177
+\l__coffin_y_dim=\dimen178
+\l__coffin_x_prime_dim=\dimen179
+\l__coffin_y_prime_dim=\dimen180
+\c_empty_coffin=\box38
+\l__coffin_aligned_coffin=\box39
+\l__coffin_aligned_internal_coffin=\box40
+\l_tmpa_coffin=\box41
+\l_tmpb_coffin=\box42
+\l__coffin_display_coffin=\box43
+\l__coffin_display_coord_coffin=\box44
+\l__coffin_display_pole_coffin=\box45
+\l__coffin_display_offset_dim=\dimen181
+\l__coffin_display_x_dim=\dimen182
+\l__coffin_display_y_dim=\dimen183
+\l__coffin_bounding_shift_dim=\dimen184
+\l__coffin_left_corner_dim=\dimen185
+\l__coffin_right_corner_dim=\dimen186
+\l__coffin_bottom_corner_dim=\dimen187
+\l__coffin_top_corner_dim=\dimen188
+\l__coffin_scaled_total_height_dim=\dimen189
+\l__coffin_scaled_width_dim=\dimen190
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count453
-\l__driver_tmp_box=\box48
+\l__driver_color_stack_int=\count441
+\l__driver_tmp_box=\box46
 ))
 Package: xparse 2018/02/21 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count454
-\g__xparse_grabber_int=\count455
-\l__xparse_m_args_int=\count456
-\l__xparse_mandatory_args_int=\count457
-\l__xparse_v_nesting_int=\count458
+\l__xparse_current_arg_int=\count442
+\g__xparse_grabber_int=\count443
+\l__xparse_m_args_int=\count444
+\l__xparse_mandatory_args_int=\count445
+\l__xparse_v_nesting_int=\count446
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty
 Package: xpatch 2012/10/02 v0.3 Extending etoolbox patching commands
@@ -1545,8 +1487,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count459
-\c@bbx:relatedtotal=\count460
+\c@bbx:relatedcount=\count447
+\c@bbx:relatedtotal=\count448
 )
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1628,35 +1570,32 @@ File: brazil.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count461
-\@quotereset=\count462
-(./Notas Econometria I.aux
+\@quotelevel=\count449
+\@quotereset=\count450
+(./Notas Economia do Setor Público.aux)
+\openout1 = `"Notas Economia do Setor Público.aux"'.
 
-LaTeX Warning: Label `SQR' multiply defined.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 22.
 
-)
-\openout1 = `"Notas Econometria I.aux"'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 23.
- (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring OFF on input line 23.
+\AtBeginShipoutBox=\box47
+Package hyperref Info: Link coloring OFF on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1664,29 +1603,29 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count463
+\c@section@level=\count451
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 23.
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
-\myptabbox=\box50
-\myptabboxwidth=\skip280
+LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
+\myptabbox=\box48
+\myptabboxwidth=\skip277
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count464
-\scratchdimen=\dimen261
-\scratchbox=\box51
-\nofMPsegments=\count465
-\nofMParguments=\count466
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count467
-\MPscratchDim=\dimen262
-\MPnumerator=\count468
-\makeMPintoPDFobject=\count469
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count452
+\scratchdimen=\dimen191
+\scratchbox=\box49
+\nofMPsegments=\count453
+\nofMParguments=\count454
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count455
+\MPscratchDim=\dimen192
+\MPnumerator=\count456
+\makeMPintoPDFobject=\count457
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1704,7 +1643,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 23.
+LaTeX Info: Redefining \microtypecontext on input line 22.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1722,20 +1661,18 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout5 = `"Notas Econometria I.bcf"'.
+\openout5 = `"Notas Economia do Setor Público.bcf"'.
 
 Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file '"Notas Economia do Setor Público".bbl' found.
 
 
-Package biblatex Warning: File '"Notas Econometria I".bbl' is wrong format vers
-ion - expected 2.9.
-
-Package biblatex Info: ... file '"Notas Econometria I".bbl' found.
-(./Notas Econometria I.bbl)
-Package biblatex Info: Reference section=0 on input line 23.
-Package biblatex Info: Reference segment=0 on input line 23.
+(./Notas Economia do Setor Público.bbl)
+Package biblatex Info: Reference section=0 on input line 22.
+Package biblatex Info: Reference segment=0 on input line 22.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 27.
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 27.
@@ -1761,44 +1698,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 27.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 27.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 31.
 
-
-! Package keyval Error: un undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 Resumo baseado em \cite{gujarati} 
-                                       e \cite{wooldridge}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package keyval Error: un undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 Resumo baseado em \cite{gujarati} 
-                                       e \cite{wooldridge}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package keyval Error: un undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 ...ado em \cite{gujarati} e \cite{wooldridge}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 32.
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1806,46 +1707,76 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (./Notas Econometria I.toc
+
+(./Notas Economia do Setor Público.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 7.
-) [1
+ [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) [2]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <24.88> on input line 33.
+(Font)              <24.88> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 33.
+(Font)              <20.74> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 33.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 40.
-
-(/usr/share/texmf/tex/latex/lm/omslmr.fd
+(Font)              <17.28> on input line 31.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 36.
+ (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 40.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 36.
+ [3
+
+]
+
+LaTeX Warning: File `Externalidade Negativa.png' not found on input line 71.
+
+<Externalidade Negativa.png, id=85, 438.13687pt x 287.57437pt>
+File: Externalidade Negativa.png Graphic file (type png)
+<use Externalidade Negativa.png>
+Package pdftex.def Info: Externalidade Negativa.png  used on input line 71.
+(pdftex.def)             Requested size: 306.69371pt x 201.30069pt.
+[4 <./Externalidade Negativa.png>]
+
+LaTeX Warning: File `Externalidade Positiva.png' not found on input line 85.
+
+<Externalidade Positiva.png, id=97, 430.60875pt x 297.36093pt>
+File: Externalidade Positiva.png Graphic file (type png)
+<use Externalidade Positiva.png>
+Package pdftex.def Info: Externalidade Positiva.png  used on input line 85.
+(pdftex.def)             Requested size: 301.42406pt x 208.15123pt.
+[5 <./Externalidade Positiva.png>]
+<Monopoly.png, id=108, 182.18062pt x 181.42781pt>
+File: Monopoly.png Graphic file (type png)
+<use Monopoly.png>
+Package pdftex.def Info: Monopoly.png  used on input line 100.
+(pdftex.def)             Requested size: 181.99722pt x 181.25296pt.
+ [6
+
+ <./Monopoly.png>]
+
+LaTeX Warning: File `Monopolio Natural.png' not found on input line 121.
 
 
-LaTeX Warning: File `OLS.png' not found on input line 51.
-
-
-! Package pdftex.def Error: File `OLS.png' not found: using draft setting.
+! Package pdftex.def Error: File `Monopolio Natural.png' not found: using draft
+ setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.51 ...ludegraphics[width=0.5\textwidth]{OLS.png}
+l.121 ...dth=0.4\textwidth]{Monopolio Natural.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 51.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 121.
+
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1853,197 +1784,59 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+ [7
 
+] [8] [9] [10] [11] [12]
+<Progressividade.png, id=159, 560.0925pt x 219.82124pt>
+File: Progressividade.png Graphic file (type png)
+<use Progressividade.png>
+Package pdftex.def Info: Progressividade.png  used on input line 282.
+(pdftex.def)             Requested size: 392.06207pt x 153.87381pt.
+ [13 <./Progressividade.png>] [14] [15
 
-! Package keyval Error: un undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53 	\caption{Fonte: \cite{wooldridge}}
-                                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package keyval Error: un undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53 	\caption{Fonte: \cite{wooldridge}}
-                                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[2
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 63.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beta' on input line 63.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 63.
-
-[3
-
-]
-
-LaTeX Warning: File `Residual.png' not found on input line 98.
-
-
-! Package pdftex.def Error: File `Residual.png' not found: using draft setting.
-
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.98 \includegraphics[scale=0.7]{Residual.png}
-                                              
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package keyval Error: un undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.100 \caption{Fonte: \cite[p. 28]{wooldridge}}
-                                               
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package keyval Error: un undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.100 \caption{Fonte: \cite[p. 28]{wooldridge}}
-                                               
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
-
- []
-
-[5
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 135.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 135.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
-
- []
-
-[6] [7] [8
-
-]
-
-! Package keyval Error: un undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.220 
-      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package keyval Error: un undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.220 
-      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package keyval Error: un undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.220 
-      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[9
+] [16
 
 ]
 \tf@toc=\write6
-\openout6 = `"Notas Econometria I.toc"'.
+\openout6 = `"Notas Economia do Setor Público.toc"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
- (./Notas Econometria I.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 221.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 317.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 317.
+ (./Notas Economia do Setor Público.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 317.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 317.
+Package logreq Info: Writing requests to '"Notas Economia do Setor Público".ru
+n.xml'.
+\openout1 = `"Notas Economia do Setor Público.run.xml"'.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package logreq Info: Writing requests to '"Notas Econometria I".run.xml'.
-\openout1 = `"Notas Econometria I.run.xml"'.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 317.
  ) 
 Here is how much of TeX's memory you used:
- 28222 strings out of 492982
- 494199 string characters out of 6134896
- 1010196 words of memory out of 5000000
- 31396 multiletter control sequences out of 15000+600000
- 606576 words of font info for 100 fonts, out of 8000000 for 9000
+ 27704 strings out of 492982
+ 488777 string characters out of 6134896
+ 998250 words of memory out of 5000000
+ 30856 multiletter control sequences out of 15000+600000
+ 607891 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,11n,61p,10469b,1910s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/l
-m/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
+ 52i,11n,62p,10482b,2093s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi
 12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/font
 s/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on "Notas Econometria I.pdf" (9 pages, 247547 bytes).
+ublic/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmtt12.pfb>
+Output written on "Notas Economia do Setor Público.pdf" (16 pages, 633171 byte
+s).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
- 209 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 24169 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 336 PDF objects out of 1000 (max. 8388607)
+ 283 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 25829 words of extra memory for PDF output out of 29859 (max. 10000000)
 

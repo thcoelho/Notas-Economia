@@ -1,0 +1,91 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{blanchard}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=8ea1d54fee57ba07b648601ddd77664a}{%
+           family={Blanchard},
+           familyi={B\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {S{ã}o Paulo. Ed. Pearson}%
+      }
+      \strng{namehash}{8ea1d54fee57ba07b648601ddd77664a}
+      \strng{fullhash}{8ea1d54fee57ba07b648601ddd77664a}
+      \strng{bibnamehash}{8ea1d54fee57ba07b648601ddd77664a}
+      \strng{authorbibnamehash}{8ea1d54fee57ba07b648601ddd77664a}
+      \strng{authornamehash}{8ea1d54fee57ba07b648601ddd77664a}
+      \strng{authorfullhash}{8ea1d54fee57ba07b648601ddd77664a}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Macroeconomia.}
+      \field{year}{2011}
+    \endentry
+    \entry{rudiger}{book}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=02aa45632c8a829a022484e38fae0a5d}{%
+           family={RUDIGER},
+           familyi={R\bibinitperiod},
+           given={DORNBUSCH},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=98c7d43580040484b9189c230a4b3f93}{%
+           family={STANLEY},
+           familyi={S\bibinitperiod},
+           given={FISCHER},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e480f6775b93152bd38ace09803d7b3c}{%
+           family={RICHARD},
+           familyi={R\bibinitperiod},
+           given={STARTZ},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{f3bc0dd8241b4996a7173300278ce840}
+      \strng{fullhash}{f3bc0dd8241b4996a7173300278ce840}
+      \strng{bibnamehash}{f3bc0dd8241b4996a7173300278ce840}
+      \strng{authorbibnamehash}{f3bc0dd8241b4996a7173300278ce840}
+      \strng{authornamehash}{f3bc0dd8241b4996a7173300278ce840}
+      \strng{authorfullhash}{f3bc0dd8241b4996a7173300278ce840}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Macroeconomia}
+      \field{year}{2002}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

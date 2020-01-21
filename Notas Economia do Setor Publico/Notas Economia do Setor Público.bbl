@@ -1,0 +1,118 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{biderman}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=5eeadba759abbb5cd8d8aafb6cc9d766}{%
+           family={Biderman},
+           familyi={B\bibinitperiod},
+           given={Ciro},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0b92d6c4bc8db51419dd4c008d0a40db}{%
+           family={Arvate},
+           familyi={A\bibinitperiod},
+           given={Paulo\bibnamedelima Roberto},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{03731cbe1d3de4daa25b1dd48c003c82}
+      \strng{fullhash}{03731cbe1d3de4daa25b1dd48c003c82}
+      \strng{bibnamehash}{03731cbe1d3de4daa25b1dd48c003c82}
+      \strng{authorbibnamehash}{03731cbe1d3de4daa25b1dd48c003c82}
+      \strng{authornamehash}{03731cbe1d3de4daa25b1dd48c003c82}
+      \strng{authorfullhash}{03731cbe1d3de4daa25b1dd48c003c82}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Economia do setor p{ú}blico no Brasil}
+      \field{year}{2004}
+    \endentry
+    \entry{nicholson}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=4784f07d1de22ed10730bcd2331baac7}{%
+           family={Nicholson},
+           familyi={N\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=31d2b699a65491a245f48eb13e361114}{%
+           family={Snyder},
+           familyi={S\bibinitperiod},
+           given={Christopher\bibnamedelima M},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nelson Education}%
+      }
+      \strng{namehash}{b8261a8ae6acb597c19a742b8b874df9}
+      \strng{fullhash}{b8261a8ae6acb597c19a742b8b874df9}
+      \strng{bibnamehash}{b8261a8ae6acb597c19a742b8b874df9}
+      \strng{authorbibnamehash}{b8261a8ae6acb597c19a742b8b874df9}
+      \strng{authornamehash}{b8261a8ae6acb597c19a742b8b874df9}
+      \strng{authorfullhash}{b8261a8ae6acb597c19a742b8b874df9}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Microeconomic theory: Basic principles and extensions}
+      \field{year}{2012}
+    \endentry
+    \entry{rezende}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=c2730e584df2e6f391951395320ef546}{%
+           family={Rezende},
+           familyi={R\bibinitperiod},
+           given={Fernando\bibnamedelima Antonio},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Editora Atlas SA}%
+      }
+      \strng{namehash}{c2730e584df2e6f391951395320ef546}
+      \strng{fullhash}{c2730e584df2e6f391951395320ef546}
+      \strng{bibnamehash}{c2730e584df2e6f391951395320ef546}
+      \strng{authorbibnamehash}{c2730e584df2e6f391951395320ef546}
+      \strng{authornamehash}{c2730e584df2e6f391951395320ef546}
+      \strng{authorfullhash}{c2730e584df2e6f391951395320ef546}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Finan{ç}as P{ú}blicas .}
+      \field{year}{2000}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

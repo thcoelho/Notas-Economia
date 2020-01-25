@@ -9,7 +9,7 @@
 \usepackage{graphicx}
 \usepackage{microtype}
 \usepackage{wrapfig}
-\usepackage[style=abnt]{biblatex}
+\usepackage{biblatex}[style=abnt]
 \addbibresource{Referencias.bib}
 
 % Informações do documento %
@@ -318,21 +318,9 @@ A fuga tributária pode ser dividida em dois grandes grupos:
 \end{enumerate}  
 
 \subsection{Elisão tributária}
-A elisão tributária é caracterizada pela evasão da cobrança e pode ser tanto lícita quanto ilícita. No caso da lícita se dá por meio de brechas na lei que permitem a diminuição ou não pagamento de certos encargos. A elisão ilícita é na qual se configura sonega?o simples e dolosa. Podemos ter duas causas de sonegação:
-\begin{enumerate}
-	\item Agente usa a sonegação como modo de sobrevivência no mercado;
-	\item Agente tem comportamento racional quanto a sonegação.
-\end{enumerate}
+A elisão tributária é caracterizada pela evasão da cobrança e pode ser tanto lícita quanto ilícita. No caso da lícita se dá por meio de brechas na lei que permitem a diminuição ou não pagamento de certos encargos. A elisão ilícita é na qual se configura
 
-Podemos analisar o primeiro caso com a \emph{curva de Laffer}. Ela nos diz que há uma alíquota ótima para qual a arrecadação é máxima. Um ponto após ou antes de tal alíquota representaria arrecadação não eficiente. A sonegação como estratégia de sobrevivência pode ser um sinal de que se está num ponto após o ótimo, ou seja, a tributação está muito alta. 
 
-Se o agente age racionalmente, ele está sujeito a regra de que : $Bmg = Cmg$. Então ele compararia o benefício de tal sonegação ao custo dela:
-
-\begin{equation} \label{sonegar}
- t Y_i \geq [t Y_i (1 + i) (1 + p) ]^d \theta
-\end{equation}
-
-Sendo t o tributo, i a taxa de juros, d o prazo da dívida e $\theta$ a probabilidade de ser pego. A solução neste caso de sonegação é o aumento da punição, seja pelo aumento da probabilidade de ser pego quanto pela quantidade em si. É preciso também frisar que ambas as razões podem coexistir, o que dificulta a ação governamental
 \printbibliography
 
 \end{document}

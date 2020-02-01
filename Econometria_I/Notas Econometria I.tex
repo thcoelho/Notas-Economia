@@ -206,7 +206,7 @@ Suponha que desejamos estimar um parâmetro populacional $\theta$. Seja $\hat{\t
   E(\hat{\theta}) = \theta
 \end{equation}
 
-O \emph{MQO} garante que dadas as inúmeras amostras diferentes possíveis a partir da população, os estimadores não são viesados. Contanto que as quatro hipóteses passadas sejam respeitadas:
+O \emph{MQO} garante que dadas as inúmeras amostras diferentes possíveis a partir da população, os estimadores não são enviesados. Contanto que as quatro hipóteses passadas sejam respeitadas:
 
 \begin{align}
     E(\hat{\beta_0}) = \beta_0 \\
@@ -222,7 +222,38 @@ Ela nos diz que:
 Var(u|x) = \sigma^2
 \end{equation}
 
+\subsection{Variância dos estimadores}
 
+Sob a hipótese de homocedasticidade, e tendo $\sigma^2$ como a variância populacional, as variâncias dos estimadores são:
+
+\begin{align}
+&Var(\hat{\beta_1}) = \frac{\sigma^2}{\sum^{n}_{i = 1} (x_i - \overline{x})^2} \\
+&Var(\hat{\beta_0}) = \frac{\sigma^2}{\sum (x_i - \overline{x})^2} \frac{\sum^{n}_{i = 1} x_i^2}{n}
+\end{align}
+
+Algumas conclusões que podem ser retiradas a partir disto:
+\begin{enumerate}
+  \item Quão maior a quantidade da amostra $(n)$, a variância tenderá a ser menor. Isso se dá por haverem mais valores para serem somados nos denominadores;
+  \item Quanto maior a variância de X na amostra, menor a variação dos estimadores.
+  \item 
+\end{enumerate}
+
+Como $u$ é variável aleatória, sua variância é dada por:
+\begin{align}
+&  Var (u|x) = E(u^2|x) - [E(u|x)]^2 \\
+&  Var (u|x) = E(u^2) = \sigma^2
+\end{align}
+
+Como é impossível obter os valores reais de $\sigma^2$, iremos calcular ele a partir da melhor informação que temos: os resíduos.
+
+\begin{equation}
+   \hat{\sigma^2} = \frac{\sum^{n}_{i = 1}}{n - 2}
+ \end{equation} 
+
+\begin{align}
+& \hat{Var} (\hat{\beta_1}) = \frac{\hat{\sigma^2}}{\sum^{n}_{i = 1} (x_i - \overline{x})^2} \\
+& \hat{Var}(\hat{\beta_0}) = \frac{\hat{\sigma^2}}{\sum (x_i - \overline{x})^2} \frac{\sum^{n}_{i = 1} x_i^2}{n}
+\end{align}
 
 \printbibliography
 

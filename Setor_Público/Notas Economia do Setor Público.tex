@@ -9,7 +9,8 @@
 \usepackage{graphicx}
 \usepackage{microtype}
 \usepackage{wrapfig}
-\usepackage[style=abnt]{biblatex}
+\usepackage{tikz}
+\usepackage[backend = biber, style=abnt]{biblatex}
 \addbibresource{Referencias.bib}
 
 % Informações do documento %
@@ -94,19 +95,19 @@ Nesse caso as soluções são:
 
 \subsection{Poder de mercado}
 \subsubsection{Monopólio}
-O monopólio é caracterizado pela presença de uma única firma ofertante. Neste caso ele continua operando quando $Cmg = Rmg$ mas pelo seu poder de mercado, seu custo marginal não coincide com o preço, o que cria ineficiências (deadweight loss).
-\clearpage
 \begin{wrapfigure}{l}{0.5\textwidth}
 	\includegraphics[width=0.4\textwidth]{Monopoly.png}
 	\centering
 	\caption{Fonte: \cite{nicholson}}
 \end{wrapfigure}
-O resultado é uma quantidade menor e preço maior do que a que ocorreria com um mercado concorrencial, no qual $Cmg = Rmg = P$. Algumas soluções são:
+O monopólio é caracterizado pela presença de uma única firma ofertante. Neste caso ele continua operando quando $Cmg = Rmg$ mas pelo seu poder de mercado, seu custo marginal não coincide com o preço, o que cria ineficiências (deadweight loss). O resultado é uma quantidade menor e preço maior do que a que ocorreria com um mercado concorrencial, no qual $Cmg = Rmg = P$.
+\clearpage
+ Algumas soluções são:
 \begin{itemize}
 \item Leis antitruste, que evitem formação de monopólios por absorção de firmas grandes.
 \item Agências reguladoras: regular a firma a fim de incentivar seu comportamento a ser mais próximo de uma firma competitiva.
 \end{itemize}
-\clearpage
+
 \subsubsection{Monopólio natural}
 O monopólio natural ocorre geralmente por barreiras de entrada ao mercado:
 \begin{itemize}
@@ -326,13 +327,52 @@ A elisão tributária é caracterizada pela evasão da cobrança e pode ser tant
 
 Podemos analisar o primeiro caso com a \emph{curva de Laffer}. Ela nos diz que há uma alíquota ótima para qual a arrecadação é máxima. Um ponto após ou antes de tal alíquota representaria arrecadação não eficiente. A sonegação como estratégia de sobrevivência pode ser um sinal de que se está num ponto após o ótimo, ou seja, a tributação está muito alta. 
 
+\begin{figure}
+\centering
+\begin{tikzpicture}
+\draw[thick,->] (0,0) -- (6,0) node[anchor=west]{t(\%)};
+\draw[thick,->] (0,0) -- (0,6) node[anchor=south]{T};
+\foreach \x in {0,1,2,3,4,5}
+   \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+\foreach \y in {1,2,3,4,5}
+    \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+\draw[red] (0,0) to[out=90,in=180] (2,3) parabola (4,1);
+\filldraw[black]  (2,3) circle (2pt) node[anchor=south]{$t^*$};
+\end{tikzpicture}
+\caption{Curva de Laffer}
+\end{figure}
+
 Se o agente age racionalmente, ele está sujeito a regra de que : $Bmg = Cmg$. Então ele compararia o benefício de tal sonegação ao custo dela:
 
 \begin{equation} \label{sonegar}
  t Y_i \geq [t Y_i (1 + i) (1 + p) ]^d \theta
 \end{equation}
 
-Sendo t o tributo, i a taxa de juros, d o prazo da dívida e $\theta$ a probabilidade de ser pego. A solução neste caso de sonegação é o aumento da punição, seja pelo aumento da probabilidade de ser pego quanto pela quantidade em si. É preciso também frisar que ambas as razões podem coexistir, o que dificulta a ação governamental
+Sendo t o tributo, i a taxa de juros, d o prazo da dívida e $\theta$ a probabilidade de ser pego. A solução neste caso de sonegação é o aumento da punição, seja pelo aumento da probabilidade de ser pego quanto pela quantidade em si. É preciso também frisar que ambas as razões podem coexistir, o que dificulta a ação governamental. Podem estar entre os objetivos do sonegador:
+
+\begin{enumerate}
+	\item Isenção tributária;
+	\item Favorecimento em eventuais licitações e concessões;
+	\item Financiamento advindo de bancos públicos;
+	\item Reserva de mercado / regulação favorável para si.
+\end{enumerate}
+
+São consequências da sonegação:
+\begin{enumerate}
+	\item Alocativas:
+	\begin{enumerate}
+		\item Piora no padrão de concorrência;
+		\item Alocação de gastos para atividades improdutivas, a fim de \emph{rent-seeking};
+		\item Enviesamento dos serviços públicos oferecidos.
+	\end{enumerate}
+	\item Redistributivos:
+	\begin{enumerate}
+		\item Pior distribuição em termos funcionais. Em geral a sonegação não é característica dos assalariados, e sim dos detentores de capital;
+		\item Pior distribuição pessoal. Geralmente são os grandes doadores que receberão os benefícios.
+	\end{enumerate}
+\end{enumerate}
+
+
 \printbibliography
 
 \end{document}

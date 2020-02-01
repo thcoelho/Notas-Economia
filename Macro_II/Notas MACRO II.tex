@@ -9,6 +9,8 @@
 \usepackage{graphicx}
 \usepackage{microtype}
 \usepackage[backend = biber, style=abnt]{biblatex}
+\usepackage{tikz}
+\usetikzlibrary{arrows, calc}
 \addbibresource{Referencias.bib}
 
 % Informações do documento %
@@ -20,11 +22,15 @@
 \pagestyle{headings}
 \pagenumbering{arabic}
 \maketitle
+
 \begin{center}
-Notas baseadas em \cite{blanchard} e \cite{rudiger}
+Notas baseadas em \cite{blanchard} e \cite{rudiger}.
 \end{center}
+
 \tableofcontents
+
 \chapter{1ª Unidade}
+
 \section{Curva de Phillips}
 A curva de phillips representa a relação inversa entre desemprego e inflação.
 Possui duas formas:
@@ -96,7 +102,7 @@ Sendo $\lambda$ a quantidade a proporção de salários indexados: estes se ajus
 É possível perceber que neste caso o impacto do desemprego sobre a inflação será potencializado. \emph{Quanto maior a proporção de contratos indexados maior o efeito da taxa de desemprego sobre a variação da inflação.}
 
 \section{Desinflação}
-Caso haja necessidade de reduzir o crescimento da inflação, como desenhar políticas para tal? A curva de phillips deixa explícito que para desinflarcionarmos a economia é preciso certo nível de desemprego acima do natural.  A quantidade de desemprego acima do natural que teremos que suportar é constante, o que temos de decidir é como distribuir esse desemprego adicional ao longo do tempo.
+Caso haja necessidade de reduzir o crescimento da inflação, como desenhar políticas para tal? A curva de phillips deixa explícito que para desinflacionar a economia é preciso certo nível de desemprego acima do natural.  A quantidade de desemprego acima do natural que teremos que suportar é constante, o que temos de decidir é como distribuir esse desemprego adicional ao longo do tempo.
 \begin{itemize}
 \item Ano-ponto excesso de desemprego: Hiato de desemprego de um ponto percentual por ano;
 \item Taxa de sacrifício: Número de anos ponto necessários para baixar a inflação em 1\%.
@@ -105,7 +111,7 @@ Caso haja necessidade de reduzir o crescimento da inflação, como desenhar pol�
 
 \section{Adendos a teoria}
 \subsection{Crítica de Lucas}
-Robert Lucas e Thomas Sargent notam que os agentes deveriam formar expectativas de acordo com toda informação disponível, não somente com uma média ponderada das ocorrências passadas. Se os agentes fossem convencidos de que a política desinflacionário seria bem sucedidada, não seria necessário grande aumento do desemprego pois as expectativas iriam convergindo com a inflação do próximo período. O principal fator para bom funcionamento de tal política então seria a \emph{credibilidade}.
+Robert Lucas e Thomas Sargent notam que os agentes deveriam formar expectativas de acordo com toda informação disponível, não somente com uma média ponderada das ocorrências passadas. Se os agentes fossem convencidos de que a política desinflacionário seria bem sucedida, não seria necessário grande aumento do desemprego pois as expectativas iriam convergindo com a inflação do próximo período. O principal fator para bom funcionamento de tal política então seria a \emph{credibilidade}.
 
 \subsection{Rigidez nominal e contratos}
 Stanley e Fischer notam que muitos dos preços da economia moderna são fixados em contratos e não se reajustam com facilidade. Por isso uma diminuição muito rápida da inflação levaria a desemprego, já que a inflação esperada está embutida nos contratos salariais vigentes.
@@ -120,10 +126,10 @@ Ball avalia mais de 65 episódios diferentes de desinflações e chega nos segui
 
 \chapter{2ª Unidade}
 \section{Economia aberta}
-Toda economia aberta pode se relacionar com outras economias por dois canais: o de comércio e o de finanças. Para compararmos os mercados de bens utilizamos as taxas de câmbio, e para o financeiro, é preciso comparar o câmbio e também as taxas de juros oferecidas.
+Toda economia aberta pode se relacionar com outras economias por dois canais: o de comércio e o de finanças. Para compararmos os mercados de bens utilizamos as taxas de câmbio, e para o financeiro, é preciso comparar também as taxas de juros oferecidas.
 
 \subsection{Taxa de câmbio}
-O câmbio pode ser flutuante: quando seu valor varia livremente; ou pode ser fixo. Na realidade, muitos bancos centrais deixam a taxa flutuar mas tentam influenciar ela por compra e venda de reservas, isso caracateriza \emph{flutuação suja}. Quanto ao câmbio fixo, Dornbusch explicita bem o uso deste: 
+O câmbio pode ser flutuante: quando seu valor varia livremente; ou pode ser fixo. Na realidade, muitos bancos centrais deixam a taxa flutuar mas tentam influenciar ela por compra e venda de reservas, isso define \emph{flutuação suja}. Quanto ao câmbio fixo, Dornbusch explicita bem o uso deste: 
 \begin{quotation}
 "Em um sistema de câmbio fixo, os bancos centrais estrangeiros estão prontos para
 comprar e vender suas moedas a um preço fixo em relação ao dólar." \cite[p.274]{rudiger}
@@ -131,12 +137,7 @@ comprar e vender suas moedas a um preço fixo em relação ao dólar." \cite[p.2
 A taxa de câmbio é dividida em taxa nominal e real:
 
 \subsubsection{Taxa nominal}
-A taxa nominal compara os preços relativos de duas moedas e é expressa por $E$. Há no entanto o problema das notações:
-\begin{itemize}
-\item  Em notação brasileira, é expressa no sentido de: quanto da moeda local é necessária para comprar uma moeda estrangeira. EX: 4 reais = 1 dólar.
-\item Na notação americana, a comparação é no sentido de quanto de dólar é possível se comprar com uma unidade de moeda estangeira. EX: 0,25 dólar = 1 real
-\end{itemize}
-Portanto, para se obter o valor de reais em dólar, se divide a quantidade em reais pela taxa nominal:
+A taxa nominal compara os preços relativos de duas moedas e é expressa por $E$. Portanto, para se obter o valor de reais em dólar, se divide a quantidade em reais pela taxa nominal:
 \[ USD = \frac{Qnt. Reais}{E}\]
 
 \subsubsection{Taxa Real}
@@ -156,14 +157,16 @@ Numa economia aberta os agentes terão a opção de comprar títulos estrangeiro
 \end{itemize}
 Para comparação entre títulos utilizamos a equação de paridade da taxa de juros:
 \[ i = i^* + \frac{E^e - E_t}{E_t} \]
+
 Sendo: 
 \begin{itemize}
 \item $i$: Taxa de juros local;
 \item $i^*$: Taxa de juros estrangeira;
-\item $Eê$: Expectativa da taxa nominal de câmbio para o próximo período;
+\item $E^e$: Expectativa da taxa nominal de câmbio para o próximo período;
 \item $E_t$: Taxa nominal de câmbio atual.
 \end{itemize}
-Essa equação irá nos dizer que para definirmos o título superior não basta somente comparar taxas de juros, mas também as alterações previstas na taxa de câmbio.
+
+A diferença entre as taxas de juros seriam então explicadas pelas expectativas.
 \subsection{Câmbio fixo}
 No câmbio fixo não faz sentido discutirmos expectativas, neste caso: $ \overline{E} = E_{t} = E_{t+1}$, substituindo na equação de paridade de juros chegamos na conclusão de que:
 
@@ -197,7 +200,7 @@ Levando em conta as seguintes simplificações:
 \[ \frac{P^{*}}{P} = 1 \Rightarrow  \epsilon = E\]
 O modelo completo será:
 \begin{equation}\label{IS}
-Y = C (Y - T) + \overline{G} + I  (Y, i ) + NX ( Y, Y^{*}, \frac{E^e}{1 + i - i^{*}}
+Y = C (Y - T) + \overline{G} + I  (Y, i ) + NX ( Y, Y^{*}, \frac{E^e}{1 + i - i^{*}})
 \end{equation}
 \begin{equation}\label{LM}
 \frac{M}{P} = Y L (i)
@@ -206,12 +209,53 @@ Y = C (Y - T) + \overline{G} + I  (Y, i ) + NX ( Y, Y^{*}, \frac{E^e}{1 + i - i^
 E = \frac{E^e}{1 + i - i^{*}}
 \end{equation}
 
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale = 1]
+\draw[thick,->] (0,0) -- (6,0) node[anchor=west]{Renda (Y)};
+\draw[thick,->] (0,0) -- (0,6) node[anchor=south]{Juros (i)};
+\foreach \x in {0,1,2,3,4,5}
+   \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+\foreach \y in {1,2,3,4,5}
+    \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+\draw[thick, green] (1,5) -- (5,1) node[anchor=east]{IS};
+\draw[thick, red] (1,1) -- (5,5)node[anchor=east]{LM};
+\filldraw[black]  (3,3) circle (2pt) node[anchor=north]{Equilíbrio};
+\end{tikzpicture}
+\caption{Modelo de Mendell-Fleming}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{tikzpicture}
+\draw[thick,->] (0,0) -- (6,0) node[anchor=west]{Câmbio (E)};
+\draw[thick,->] (0,0) -- (0,6) node[anchor=south]{Juros (i)};
+\foreach \x in {0,1,2,3,4,5}
+   \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+\foreach \y in {1,2,3,4,5}
+    \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+\draw[thick, blue] (1,5) -- (5,1) node[anchor=east] {Câmbio};
+\filldraw[black]  (3,3) circle (2pt) node[anchor=north]{Equilíbrio};
+\end{tikzpicture}
+\caption{Câmbio no modelo de Mendell-Fleming}
+\end{figure}
+
+
 \subsection{Políticas macroeconômicas}
-Levando em conta políticas expansionistas:
+Levando em conta políticas expansionistas e câmbio flexível:
 \[ G \uparrow  \rightarrow Y \uparrow i \uparrow \rightarrow E\downarrow\]
 \[ M \uparrow \rightarrow Y \uparrow \rightarrow i \downarrow \rightarrow E \uparrow\]
 
+Se pensarmos no sentido de câmbio fixo, perceberemos que a política fiscal é \emph{plena}, já que o banco central não possui autoridade para utilizar da política monetária. E se a taxa de juros é alterada por outros motivos, o banco central intervém para levá-la ao patamar inicial:
+
+\[ G \uparrow \rightarrow Y \uparrow \rightarrow i\uparrow \]
+
+Como $i = i^*$ e a taxa estrangeira não se alterou, o banco central intervém de modo expansionista para diminuir a taxa de juros. Isso empurra a IS mais ainda e aumenta a renda mais do que o impacto inicial:
+
+\[ M \uparrow \rightarrow i \downarrow \rightarrow Y \uparrow\]
 \chapter{3ª Unidade}
 
 \printbibliography
+
+
 \end{document}

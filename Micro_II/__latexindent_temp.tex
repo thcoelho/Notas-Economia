@@ -10,7 +10,6 @@
 \usepackage{microtype}
 \usepackage{wrapfig}
 \usepackage{multirow}
-\usepackage{amsmath}
 \usepackage[backend = biber, style=abnt]{biblatex}
 \addbibresource{Referencias.bib}
 
@@ -164,11 +163,7 @@ O modelo é caracterizado pelas seguintes hipóteses:
 Sendo n firmas:
 \[ i = 1, 2 , 3, ..., n \Rightarrow Q = q_1 + q_2 + q_3 + ... q_n\]
 O equilíbrio de Nash nesse caso é dado por:
-
-\begin{equation}
-	\frac{d \pi_i}{d q_i} = \frac{d RT_i}{d q_i} - \frac{d CT_i}{d q_i} = 0
-\end{equation} 
-	
+\[  \frac{d \pi_i}{d q_i} = \frac{d RT_i}{d q_i} - \frac{d CT_i}{d q_i} = 0\]
 
 \section{Bertrand}
 O modelo de Bertrand se dá por duas firmas idênticas, produzindo bens idênticos com custos marginais constantes. A decisão de tais firmas é dada de modo simultâneo,  e o equilíbrio de Nash destas de dá quando seu $P = Cmg$, como se fosse mercado perfeito. A essa conclusão é dado o nome de \emph{paradoxo de Bertrand}, ora, é difícil que a competição entre somente duas firmas seja tão acirrada a ponto de não haver mark-up. Podemos estabelecer as seguintes regras para este mercado (sendo $Q = q_1 + q_2$):
@@ -179,14 +174,13 @@ O modelo de Bertrand se dá por duas firmas idênticas, produzindo bens idêntic
 \end{enumerate}
 
 \section{Stackelberg}
-Este modelo se diferencia por ter decisões sequenciais: uma das firmas (chamada de líder) toma as decisões de produção, e a segunda firma reagirá de acordo com sua função reação, ou seja, a segunda firma age como em um modelo de Cournot. As duas firmas possuem custos idênticos e iguais a zero, além de produto homogêneo. O líder nesse caso possui duas opções, que são liderar por preço ou por quantidade.
+Este modelo se diferencia por ter decisões sequenciais: uma das firmas (chamada de líder) toma as decisões de produção, e a segunda firma reagirá de acordo com sua função reação, ou seja, a segunda firma age como em um modelo de Cournot. As duas firmas possuem custos idênticos e iguais a zero, além de produto homogêneo. 
 
-O problema de maximização de lucros do seguidor neste caso é o seguinte:
+O problema de maximização do seguidor neste caso é o seguinte:
 
-\begin{align}
-& max_{y2} p(y_1 + y_2) y_2 -c_2 (y_2) \\
-& Rmg_2 = p (y_1 + y_2) + \frac{\triangle P}{\triangle y_2} y_2 = Cmg_2
-\end{align}
+\begin{equation} \label{stackelberg}
+	max_{y2} p(y_1 + y_2) y_2 -c_2 (y_2)
+\end{equation}
 
 \section{Conluio}
 Nesse tipo de mercado duas empresas combinam suas produções de tal modo:
@@ -209,18 +203,14 @@ Comparado aos modelos anteriores o preço é maior, a quantidade menor e lucro d
 \begin{tabular}{|l|l|l|}
 \hline
  & \multicolumn{2}{l|}{Lucro Firma 2} \\ \hline
-\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Lucro\\ Firma 1\\ \end{tabular}} & 12 , 12 (i) & 20, 4 \\ \cline{2-3} 
+\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Lucro\\ Firma\\ 1\end{tabular}} & 12 , 12 (i) & 20, 4 \\ \cline{2-3} 
  & 4, 20 & 16 , 16 (ii) \\ \hline
 \end{tabular}
 \end{table}
 
 \section{Liderança de preço ou Mercado com firma dominante}
 Nesta organização há uma firma dominante que divide o mercado com diversas firmas satélite. A firma dominante será aquela que define o preço de mercado, por isso possui um mark-up e encontra seu equilíbrio quando $Cmg = Rmg$. As firmas satélite não possuem poder de mercado e portanto estão em equilíbrio quando $Cmg = P$. A demanda do mercado é dada :
-
-\begin{equation}
-	 D_M = D_D + D_S
-\end{equation}
-
+\[ D_M = D_D + D_S \]
 Demanda do mercado é igual a demanda pela firma dominante mias demanda das firmas satélite.
 \begin{figure}[h]
 \centering
@@ -228,7 +218,8 @@ Demanda do mercado é igual a demanda pela firma dominante mias demanda das firm
 \caption{Fonte: \cite[p. 546]{besanko}}
 \end{figure}
 
-\section{Cartel}
+\section{Cartel} % (fold)
+\label{sec:cartel}
 
 O cartel possui as seguintes condições para formação:
 
@@ -247,6 +238,7 @@ Sua estrutura típica é:
 São características de sua conduta:
 
 \begin{enumerate}
+
 	\item Incentivos para formação:
 	\begin{itemize}
 		\item Habilidade de elevação de preços sem induzir a competição de não-membros do cartel;
@@ -284,6 +276,7 @@ São características de sua conduta:
 	\end{itemize}
 
 \end{enumerate}
+% section cartel (end)
 
 \section{Teoria dos jogos}
 A teoria dos jogos é usada quando possuímos situações com decisões de múltiplos agentes. Cada agente toma uma decisão de acordo com as decisões dos demais jogadores, e os jogos podem ser tanto cooperativos quanto não cooperativos. Jogos podem ser \emph{repetitivos}, quando ocorrem uma quantidade de vezes seja esta finita ou não, e podem ser \emph{sequenciais}: quando as decisões são tomadas de forma não simultânea. A terminologia que usaremos para abordar teoria dos jogos é a seguinte:

@@ -9,6 +9,8 @@
 \usepackage{graphicx}
 \usepackage{microtype}
 \usepackage[backend = biber, style=abnt]{biblatex}
+\usepackage{pgfplots}
+\usepackage{amsmath}
 \usepackage{tikz}
 \usetikzlibrary{arrows, calc}
 \addbibresource{Referencias.bib}
@@ -253,9 +255,99 @@ Se pensarmos no sentido de câmbio fixo, perceberemos que a política fiscal é 
 Como $i = i^*$ e a taxa estrangeira não se alterou, o banco central intervém de modo expansionista para diminuir a taxa de juros. Isso empurra a IS mais ainda e aumenta a renda mais do que o impacto inicial:
 
 \[ M \uparrow \rightarrow i \downarrow \rightarrow Y \uparrow\]
+
 \chapter{3ª Unidade}
+\section{Balanço de Pagamentos}
+Num balanço de pagamentos temos duas contas principais: 
+
+\begin{enumerate}
+    \item Corrente: Registra bens, serviços, pagamentos e transferências; 
+    \item Capital: Registra as transações de ativos.
+\end{enumerate}
+
+A suposição principal do nosso modelo é que \emph{o balanço de pagamentos está sempre em equilíbro.} Ou seja, as duas contas sempre possuem o mesmo valor, o que cria a seguinte regra:
+
+\begin{equation} \label{contas}
+    Corrente - Capital = 0
+\end{equation}
+
+A nossa relação $BP$ será dada do seguinte modo:
+
+\begin{equation} \label{BP}
+    BP: NX (Y, Y^*, \epsilon) + F (i, i^*) = 0    
+\end{equation}
+
+Aonde $NX$ representa as contas correntes e $F$ representa as contas de capital.
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis lines = left,
+            xlabel = $Renda (Y)$,
+            ylabel = $Juros (i)$,
+        ]
+      \addplot[color=blue, domain=0:10]{x};\addlegendentry{BP}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Balanço de pagamentos}
+    \label{fig:BP}
+\end{figure}
+
+A inclinação de curva de balaço de pagamentos nos diz quão atrativo é um país para o capital financeiro externo. Quanto menos inclinada ela, menor o impacto na renda consequente de um aumento nos juros. Podemos ter ainda dois casos extremos do balanço de pagamentos:
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis lines = left,
+            xlabel = $Renda (Y)$,
+            ylabel = $Juros (i)$,
+            xmin = 0,
+            ymin = 0,
+        ]
+      \addplot[color=blue,domain=0:5]{3};\addlegendentry{BP 1}
+      \addplot[color=orange] coordinates {(3,0) (3,5)};\addlegendentry{BP 2}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Casos extremos}
+\end{figure}
+
+O caso que $BP$ 1 representa é aquele no qual há mobilidade perfeita de capital. A $BP$ 2 representa um país fechado, aonde não há mobilidade de capitais. Uma observação importante é que se a mobilidade de capitais não é perfeita, a equação de \emph{paridade de taxa de juros} não funciona.
+
+\subsection{Superávits e defícits}
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis lines = left,
+            xlabel = $Renda (Y)$,
+            ylabel = $Juros (i)$,
+            xmin = 0,
+            ymin = 0,
+        ]
+      \addplot[color=blue,domain=0:5]{x};\addlegendentry{BP}
+      \addplot[color=green, mark=*] coordinates{(3,4)}; \addlegendentry{S}
+      \addplot[color=red, mark=*] coordinates{(3,1)}; \addlegendentry{D}
+      \addplot[color=black, mark=*] coordinates{(3,3)}; \addlegendentry{E}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Superávits e defícits}
+\end{figure}
+
+Para fim de análise temos que considerar ou a renda ou o juros como fixos, nesse exemplo consideraremos a renda como fixa. Descobrimos se um ponto é superávit ou defícit ao comparamos sua taxa de juros com a taxa de juros na reta (equilíbrio):
+
+\begin{align}
+& i_s \geq i_e \rightarrow F_c > F_e \label{S} \\
+& i_d \leq i_e \rightarrow F_d \leq F_e \label{D} 
+\end{align}
+
+Aonde a equação \ref{S} representa superávit e a equação \ref{D} representa defícit.
+
 
 \printbibliography
+
 
 
 \end{document}

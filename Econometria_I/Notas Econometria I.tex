@@ -48,9 +48,9 @@ Encontramos assim nossa \emph{Função regressão populacional} [FRP]:
 \[ E(Y|X) = \beta_0 + \beta_1 X\]
 
 \begin{wrapfigure}{l}{0.5\textwidth}
-	\includegraphics[width=0.5\textwidth]{OLS.png}
-	\centering
-	\caption{Fonte: \cite{wooldridge}}
+  \includegraphics[width=0.5\textwidth]{OLS.png}
+  \centering
+  \caption{Fonte: \cite{wooldridge}}
 \end{wrapfigure}
 
 Observe que para cada observação de X há uma distribuição de valores de Y, mas os que estão na linha de regressão representam a esperança (média) destes valores para aquele dado X. A linha de regressão é o local geométricos das expectativas condicionais das variáveis dependentes dados certos valores das explicativas.
@@ -69,19 +69,19 @@ Pelas hipóteses podemos deduzir:
 \[E(X (Y - \beta_0 - \beta_1 X)) = 0 \]\\
 Montamos o sistema:
 \begin{equation} \label{beta0}
- \frac{\sum_{i=1}^{n} Y_i - \hat{\beta}_0 - \hat\beta_1 X_i}{n} = 0 
+ \frac{\sum \limits_{i=1}^{n} Y_i - \hat{\beta}_0 - \hat\beta_1 X_i}{n} = 0 
  \end{equation}
  \begin{equation} \label{beta1}
-\frac{\sum_{i=1}^{n} X_i (Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_i)}{n} = 0
+\frac{\sum \limits_{i=1}^{n} X_i (Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_i)}{n} = 0
  \end{equation}
 Pelas regras de somatório:
-\[ \frac{\sum_{i=1}^{n} Y_i}{n} -\frac{\sum_{i=1}^{n} \hat{\beta}_0}{n} - \frac{\sum_{i=1}^{n} \hat{\beta}_1 X_i}{n} = 0 \]
+\[ \frac{\sum \limits_{i=1}^{n} Y_i}{n} -\frac{\sum \limits_{i=1}^{n} \hat{\beta}_0}{n} - \frac{\sum \limits_{i=1}^{n} \hat{\beta}_1 X_i}{n} = 0 \]
 \[  \hat{\beta}_0 = \overline{Y} - \hat{\beta}_1 \overline{X} \]
 Substituindo o valor de $\beta_0$ na segunda equação:
-\[\sum_{i=1}^{n} X_i (Y_i - ( \overline{Y} - \hat{\beta}_1 \overline{X}) - \hat{\beta}_1 X_i = 0 \]
+\[\sum \limits_{i=1}^{n} X_i (Y_i - ( \overline{Y} - \hat{\beta}_1 \overline{X}) - \hat{\beta}_1 X_i = 0 \]
 Por manipulação algébrica chegamos no seguinte sistema de equações linear (Todos os betas são estimativas):
 \[ \hat{\beta}_0 = \overline{Y} - \hat{\beta}_1 \overline{X} \]
-\[\hat{\beta}_1 = \frac{ \sum_{i=1}^{n} ( X_i - \overline{X}) ( Y_i - \overline{Y})}{{\sum_{i=1}^{n} ( X_i - \overline{X})^2}} \]
+\[\hat{\beta}_1 = \frac{ \sum \limits_{i=1}^{n} ( X_i - \overline{X}) ( Y_i - \overline{Y})}{{\sum \limits_{i=1}^{n} ( X_i - \overline{X})^2}} \]
 Percebe que a estimativa de beta 1 chapéu é dada pela covariância entre X e Y sobre a variância de X, portanto o sistema fica:
 \begin{equation}\label{beta0chapeu}
  \hat{\beta}_0 = \overline{Y} - \hat{\beta}_1 \overline{X} 
@@ -99,23 +99,23 @@ Existem n resíduos, que nos dizem a diferença entre os valores esperados de $Y
 \centering
 \caption{Fonte: \cite[p. 28]{wooldridge}}
 \end{figure}
-\[ \sum_{i = 1}^{n} \hat{u}_i^2 \]
-A idéia é obter uma reta com o menor resíduo possivel, para isso queremos minimizar a soma dos quadrados dos resíduos:
-\[ \sum_{i = 1}^{n} Y_i - \hat{Y}_i\]
+\[ \sum \limits_{i = 1}^{n} \hat{u}_i^2 \]
+A ideia é obter uma reta com o menor resíduo possível, para isso queremos minimizar a soma dos quadrados dos resíduos:
+\[ \sum \limits_{i = 1}^{n} Y_i - \hat{Y}_i\]
 Substituímos $Y_i$ e obtemos a equação final:
-\[  Q= \sum_{i = 1}^{n} ( Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_i)^2 \]
+\[  Q= \sum \limits_{i = 1}^{n} ( Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_i)^2 \]
 Com isso nosso objetivo passa a ser minimizar $Q$ com relação a $\hat{\beta}_0$ e $\hat{\beta}_1$.
 \clearpage
 Teremos então as condições de 1ª ordem:
-\[\frac{dQ}{d \hat{\beta}_0} = 0 \rightarrow -2 \sum^n_{i=1} (Y_i - \hat{\beta}_0 - \hat{\beta}_1) \]
-\[ \frac{dQ}{d \hat{\beta}_1} = 0 \rightarrow  -2 \sum^n_{i=1} X_i (Y_i - \hat{\beta}_0 - \hat{\beta}_1)\]
+\[\frac{dQ}{d \hat{\beta}_0} = 0 \rightarrow -2 \sum \limits^n_{i=1} (Y_i - \hat{\beta}_0 - \hat{\beta}_1) \]
+\[ \frac{dQ}{d \hat{\beta}_1} = 0 \rightarrow  -2 \sum \limits^n_{i=1} X_i (Y_i - \hat{\beta}_0 - \hat{\beta}_1)\]
 Podemos ainda fazer uma transformação monotônica das duas equações dividindo ambas por $-2$ e obter:
- \[\sum_{i = 1}^{n} ( Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_i) \]
- \[\sum_{i = 1}^{n} X_i ( Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_i) \]
- Que equivale ainda as duas hipóteses populacionais a quais chegamos ao tentar deduzir as fórmulas dos estimadores \ref{beta0} e \ref{beta1}. Se continuarmos a desenvolver as fórmulas chegariamos ao mesmo sistema para determinarmos os estimadores: \ref{beta0chapeu} e \ref{beta1chapeu}. Concluimos então que as fórmulas do estimadores minimizam a soma dos quadrados dos resíduos. \newline
+ \[\sum \limits_{i = 1}^{n} ( Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_i) \]
+ \[\sum \limits_{i = 1}^{n} X_i ( Y_i - \hat{\beta}_0 - \hat{\beta}_1 X_i) \]
+ Que equivale ainda as duas hipóteses populacionais a quais chegamos ao tentar deduzir as fórmulas dos estimadores \ref{beta0} e \ref{beta1}. Se continuarmos a desenvolver as fórmulas chegamos ao mesmo sistema para determinarmos os estimadores: \ref{beta0chapeu} e \ref{beta1chapeu}. Concluímos então que as fórmulas do estimadores minimizam a soma dos quadrados dos resíduos. \newline
  
  \section{Reta de regressão}
- A reta de regressão é aquela que minimiza os resíduos quadrados, que, como vimos anteriormentes, é aquela reta que tem como intercepto $\hat{\beta_0}$ e como inclinação $\hat{\beta_1}$. A reta de regressão passa por todos os valores esperados dado x e consegue te dar os valores previstos $\hat{Y}$ para todo valor de variável explicativa, até mesmo aquelas que não possuimos observações.
+ A reta de regressão é aquela que minimiza os resíduos quadrados, que, como vimos anteriormente, é aquela reta que tem como intercepto $\hat{\beta_0}$ e como inclinação $\hat{\beta_1}$. A reta de regressão passa por todos os valores esperados dado x e consegue te dar os valores previstos $\hat{Y}$ para todo valor de variável explicativa, até mesmo aquelas que não possuímos observações.
  \[ \frac{d\hat{Y}}{dx} = \hat{\beta_1} \Rightarrow \triangle \hat{Y} = \hat{\beta_1} \triangle X \]
 A mudança em $ \hat{Y}$ é igual a mudança em $X$ vezes o coeficiente da reta $\hat{\beta_1}$. Esta previsão vale para a população como um todo.
 
@@ -136,8 +136,8 @@ Temos quatro principais formas funcionais:
 
 Podemos criar uma lista das propriedades mais importantes da MQO amostral vistas até agora:
 \begin{enumerate}
-\item Soma dos resíduos é igual a zero: $\sum \hat{u}_i = 0$;
-\item Covariância amostral entre x e resíduos na amostra é zero: $\sum X_i \hat{u}_i = 0$;
+\item Soma dos resíduos é igual a zero: $\sum \limits \hat{u}_i = 0$;
+\item Covariância amostral entre x e resíduos na amostra é zero: $\sum \limits X_i \hat{u}_i = 0$;
 \item Os pontos $( \overline{X}, \overline{Y})$ sempre estarão na reta de regressão, dado que:
 \[ \hat{Y} = \hat{\beta_0} + \hat{\beta_1} X_i \Rightarrow X = \overline{X} \rightarrow Y = \overline{Y}\]
 \item Covariância amostral entre $\hat{Y}$ e $ \hat{u}$ é zero;
@@ -149,17 +149,17 @@ Podemos então, a partir da propriedade 6, chegar nas seguintes abreviações: \
  
  Soma dos Quadrados totais:
  \begin{equation}\label{SQT}
-  SQT = \sum_{i = 1}^{n} ( Y_i - \overline{Y})^2
+  SQT = \sum \limits_{i = 1}^{n} ( Y_i - \overline{Y})^2
  \end{equation}
  
  Soma dos quadrados explicados:
   \begin{equation}\label{SQE}
- SQE =	\sum_{i = 1}^{n} ( \hat{Y_i} - \overline{Y})^2
+ SQE =  \sum \limits_{i = 1}^{n} ( \hat{Y_i} - \overline{Y})^2
  \end{equation}
  
  Soma dos quadrados dos resíduos:
  \begin{equation} \label{SQR}
- SQR = \sum_{i = 1}^{n} (\hat{u_i})^2
+ SQR = \sum \limits_{i = 1}^{n} (\hat{u_i})^2
  \end{equation}
  
  Por fim, temos que:
@@ -193,14 +193,14 @@ SQT = SQE + SQR
 Algumas das precauções que podem ser tomadas para termos estimadores não enviesados:
 
 \begin{enumerate}
-	\item Amostragem aleatório: é aquela que representa a população inteira, e não somente grupos específicos. Para isso todos os membros de  população tem de ter alguma chance de participar da amostra;
-	\item Auto seleção: quando partes da população pode intencionalmente decidir participar da amostragem;
-	\item Média condicional de erro igual a zero: $E(u|X) = 0$. Não há correlação entre o erro e X, isso é importante para garantirmos o efeito ceteris paribus;
-	\item As variáveis X e Y não podem ter somente um único valor para toda a amostra;
+  \item Amostragem aleatório: é aquela que representa a população inteira, e não somente grupos específicos. Para isso todos os membros de  população tem de ter alguma chance de participar da amostra;
+  \item Auto seleção: quando partes da população pode intencionalmente decidir participar da amostragem;
+  \item Média condicional de erro igual a zero: $E(u|X) = 0$. Não há correlação entre o erro e X, isso é importante para garantirmos o efeito ceteris paribus;
+  \item As variáveis X e Y não podem ter somente um único valor para toda a amostra;
 
 \end{enumerate}
 
-Suponha que desejamos estimar um parâmetro populacional $\theta$. Seja $\hat{\theta}$ o estimador de $\theta$, $\hat{\theta}$ não seria viesado se:
+Suponha que desejamos estimar um parâmetro populacional $\theta$. Seja $\hat{\theta}$ o estimador de $\theta$, $\hat{\theta}$ não seria enviesado se:
 \begin{equation}
     \label{vies}
   E(\hat{\theta}) = \theta
@@ -227,15 +227,14 @@ Var(u|x) = \sigma^2
 Sob a hipótese de homocedasticidade, e tendo $\sigma^2$ como a variância populacional, as variâncias dos estimadores são:
 
 \begin{align}
-&Var(\hat{\beta_1}) = \frac{\sigma^2}{\sum^{n}_{i = 1} (x_i - \overline{x})^2} \\
-&Var(\hat{\beta_0}) = \frac{\sigma^2}{\sum (x_i - \overline{x})^2} \frac{\sum^{n}_{i = 1} x_i^2}{n}
+&Var(\hat{\beta_1}) = \frac{\sigma^2}{\sum \limits^{n}_{i = 1} (x_i - \overline{x})^2} \\
+&Var(\hat{\beta_0}) = \frac{\sigma^2}{\sum \limits (x_i - \overline{x})^2} \frac{\sum \limits^{n}_{i = 1} x_i^2}{n}
 \end{align}
 
 Algumas conclusões que podem ser retiradas a partir disto:
 \begin{enumerate}
   \item Quão maior a quantidade da amostra $(n)$, a variância tenderá a ser menor. Isso se dá por haverem mais valores para serem somados nos denominadores;
   \item Quanto maior a variância de X na amostra, menor a variação dos estimadores.
-  \item 
 \end{enumerate}
 
 Como $u$ é variável aleatória, sua variância é dada por:
@@ -247,14 +246,29 @@ Como $u$ é variável aleatória, sua variância é dada por:
 Como é impossível obter os valores reais de $\sigma^2$, iremos calcular ele a partir da melhor informação que temos: os resíduos.
 
 \begin{equation}
-   \hat{\sigma^2} = \frac{\sum^{n}_{i = 1}}{n - 2}
+   \hat{\sigma^2} = \frac{\sum \limits^{n}_{i = 1} u_i ^2}{n - 2}
  \end{equation} 
+ 
+Sendo $( n - 2 )$ o número de \textit{graus de liberdade} dos estimadores. O grau de liberdade representa o número de observações amostrais independentes. Este valor é obtido pelo número de observações $n$ menos o número de restrições independentes $(\beta_1, \beta_2)$. Portanto a regra que podemos estabelecer é a seguinte, sendo $k$ o número de variáveis do modelo:
+
+\begin{equation}
+Gº liberdade = n - ks   
+\end{equation}
+
+Com nossa estimativa de $\sigma^2$ podemos agora calcular as variâncias estimadas dos coeficientes:
 
 \begin{align}
-& \hat{Var} (\hat{\beta_1}) = \frac{\hat{\sigma^2}}{\sum^{n}_{i = 1} (x_i - \overline{x})^2} \\
-& \hat{Var}(\hat{\beta_0}) = \frac{\hat{\sigma^2}}{\sum (x_i - \overline{x})^2} \frac{\sum^{n}_{i = 1} x_i^2}{n}
+& \hat{Var} (\hat{\beta_1}) = \frac{\hat{\sigma^2}}{\sum \limits^{n}_{i = 1} (x_i - \overline{x})^2} \\
+& \hat{Var}(\hat{\beta_0}) = \frac{\hat{\sigma^2}}{\sum \limits (x_i - \overline{x})^2} \frac{\sum \limits^{n}_{i = 1} x_i^2}{n}
+\end{align}
+
+E também o \textit{erro padrão} dos estimadores:
+
+\begin{align}
+    & Ep (\hat{\beta_1}) = \frac{\sigma^2}{\sqrt{\sum \limits^{n}_{i=1} x_i^2}} \\
+    & Ep (\hat{\beta_0}) = \sqrt{\frac{\sum \limits^{n}_{i=1} x_i^2}{n \sum \limits^{n}_{i=1} x_i^2}} \sigma
 \end{align}
 
 \printbibliography
 
-\end{document}
+\end{document} 

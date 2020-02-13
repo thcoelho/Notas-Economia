@@ -10,6 +10,7 @@
 \usepackage{microtype}
 \usepackage{wrapfig}
 \usepackage{multirow}
+\usepackage{pgfplots}
 \usepackage{amsmath}
 \usepackage[backend = biber, style=abnt]{biblatex}
 \addbibresource{Referencias.bib}
@@ -301,6 +302,79 @@ A \emph{estratégia ótima} é aquela que maximiza o payoff de um jogador, presu
 
 
 \chapter{3ª Unidade}
+\section{Demanda por trabalho}
+\subsection{Curto prazo}
+Temos como hipóteses do modelo:
+\begin{enumerate}
+	\item Mercadoria única sendo produzida em concorrência perfeita; 
+	\item Mercado de fator variável ($L$) é de concorrência perfeita; 
+	\item Tecnologia é dada.
+\end{enumerate}
+
+A análise de curto prazo assume que o valor da mão de obra ($W$) é constante, como este é o único fator variável ele é também igual ao custo marginal.
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			axis lines = left,
+            xlabel = $Trabalho (L)$,
+            ylabel = $Salário (W)$,
+            xmin = 0,
+			ymin = 0,
+			ymax = 8,
+		]
+			\addplot[color=blue]{2}; \addlegendentry{$O_1$}
+			\addplot[color=yellow]{4}; \addlegendentry{$O_2$}
+			\addplot[color=red]{6}; \addlegendentry{$O_3$}
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Remuneração}
+\end{figure}
+
+No entanto a Produtividade marginal do trabalho é decrescente:
+
+\begin{figure}[ht!]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			axis lines = left,
+            xlabel = $Trabalho (L)$,
+            ylabel = $Quantidade (Q)$,
+            xmin = 0,
+			ymin = 0,
+			ymax = 6
+		]
+			\addplot[color=blue, smooth]{-x^2 + x + 4}; \addlegendentry{$Pmg_L$}
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Produtividade marginal}
+\end{figure}
+
+O valor marginal do trabalho é:
+\begin{equation} \label{vpmg}
+	Vpmg_L = \overline{P} * Pmg_L
+\end{equation}
+
+Como na concorrência perfeita $\rightarrow P = Rmg$, e o trabalho é o único fator variável, a receita do produto marginal do é:
+
+\begin{equation} \label{rpmg}
+	Rpmg_L = Rmg Pmg_L
+\end{equation}
+
+Podemos concluir que:
+\begin{equation}
+	Rpmg_L = Vpmg_L
+\end{equation}
+
+Pela nossa condição de maximização de concorrência perfeita $(\pi = 0)$, e que $P = Rmg$, $W = Cmg$:
+
+\begin{align} \label{eq_mf}
+&	\frac{d \pi}{d L} = \overline{P} \frac{d Q}{d L} - \overline{W} = 0 \\ 
+&  \overline{P} Pmg_L = \overline{W} \\
+&  Vpmg_L = \overline{W}
+\end{align}
+
 \printbibliography
 
 \end{document}

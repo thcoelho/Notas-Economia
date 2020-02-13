@@ -10,6 +10,7 @@
 \usepackage{microtype}
 \usepackage{wrapfig}
 \usepackage{tikz}
+\usepackage{pgfplots}
 \usepackage[backend = biber, style=abnt]{biblatex}
 \addbibresource{Referencias.bib}
 
@@ -318,8 +319,7 @@ A fuga tributária pode ser dividida em dois grandes grupos:
   	\item Evasão tributária 
 \end{enumerate}  
 
-\subsection{Elisão tributária}
-A elisão tributária é caracterizada pela evasão da cobrança e pode ser tanto lícita quanto ilícita. No caso da lícita se dá por meio de brechas na lei que permitem a diminuição ou não pagamento de certos encargos. A elisão ilícita é na qual se configura sonega?o simples e dolosa. Podemos ter duas causas de sonegação:
+ elisão tributária é caracterizada pela evasão da cobrança e pode ser tanto lícita quanto ilícita. No caso da lícita se dá por meio de brechas na lei que permitem a diminuição ou não pagamento de certos encargos. A elisão ilícita é na qual se configura sonega?o simples e dolosa. Podemos ter duas causas de sonegação:
 \begin{enumerate}
 	\item Agente usa a sonegação como modo de sobrevivência no mercado;
 	\item Agente tem comportamento racional quanto a sonegação.
@@ -328,19 +328,19 @@ A elisão tributária é caracterizada pela evasão da cobrança e pode ser tant
 Podemos analisar o primeiro caso com a \emph{curva de Laffer}. Ela nos diz que há uma alíquota ótima para qual a arrecadação é máxima. Um ponto após ou antes de tal alíquota representaria arrecadação não eficiente. A sonegação como estratégia de sobrevivência pode ser um sinal de que se está num ponto após o ótimo, ou seja, a tributação está muito alta. 
 
 \begin{figure}
-\centering
-\begin{tikzpicture}
-\draw[thick,->] (0,0) -- (6,0) node[anchor=west]{t(\%)};
-\draw[thick,->] (0,0) -- (0,6) node[anchor=south]{T};
-\foreach \x in {0,1,2,3,4,5}
-   \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
-\foreach \y in {1,2,3,4,5}
-    \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
-\draw[red] (0,0) to[out=90,in=180] (2,3) parabola (4,1);
-\filldraw[black]  (2,3) circle (2pt) node[anchor=south]{$t^*$};
-\end{tikzpicture}
-\caption{Curva de Laffer}
-\end{figure}
+	\centering
+	\begin{tikzpicture}
+	\draw[thick,->] (0,0) -- (6,0) node[anchor=west]{t(\%)};
+	\draw[thick,->] (0,0) -- (0,6) node[anchor=south]{T};
+	\foreach \x in {0,1,2,3,4,5}
+	   \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+	\foreach \y in {1,2,3,4,5}
+		\draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+	\draw[red] (0,0) to[out=90,in=180] (2,3) parabola (4,1);
+	\filldraw[black]  (2,3) circle (2pt) node[anchor=south]{$t^*$};
+	\end{tikzpicture}
+	\caption{Curva de Laffer}
+	\end{figure}
 
 Se o agente age racionalmente, ele está sujeito a regra de que : $Bmg = Cmg$. Então ele compararia o benefício de tal sonegação ao custo dela:
 
@@ -371,6 +371,42 @@ São consequências da sonegação:
 		\item Pior distribuição pessoal. Geralmente são os grandes doadores que receberão os benefícios.
 	\end{enumerate}
 \end{enumerate}
+
+\section{Efeito Tanzi e efeito vendas a prazo}
+Sabendo que o fato gerador de obrigação tributária e seu pagamento efetivo ocorrem em períodos diferentes, Tanzi observa que a inflação ocorrida entre os dois períodos altera a arrecadação real. Para obtermos tal arrecação real teríamos então que corrigirmos a arrecadação nominal:
+
+\begin{equation} \label{Tanzi}
+	R = \frac{T}{(1 + p)^n}
+\end{equation}
+
+Aonde $R$ é o valor real, $T$ o nominal, $p$ o nível de preços e $n$ o número de períodos entre o fato gerador e a coleta.
+
+Temos também o efeito vendas a prazo, que demonstra a influência da inflação sobre o valor das vendas a prazo.
+
+\begin{equation} \label{vendas_a_prazo}
+	B = X (1 + p)^n
+\end{equation}
+
+Tendo $B$ como valor a prazo e $X$ como valor a vista. Podemos obter então o \emph{efeito conjunto}:
+
+\begin{equation} \label{efeito_conjunto}
+	R = \frac{X t (1 + p)^m}{(1 + p)^n} \Rightarrow R = X t (1 + p)^{m - n}
+\end{equation}
+
+Temos no entanto alguns problemas de superestimação quanto as vendas a prazo:
+\begin{enumerate}
+	\item Nem todas as transações são a prazo. Isso pode ser corrigido ao introduzirmos um coeficiente $\alpha$, que representa a porcentagem de transações a vista. Temos assim nossa equação corrigida:
+	\begin{equation} \label{efeito_corrigido}
+		R = \alpha \frac{T}{(1 + p)^n} + (1 - \alpha) T (1 + p)^{m - n}
+	\end{equation}
+	\item Disponibilidade de prazo é função do nível inflacionário:
+	\begin{equation}
+		m = f(p)
+	\end{equation} 
+	\item Na cadeia produtiva existem agentes que compram a prazo e vendem a vista.
+\end{enumerate} 
+
+\section{Imposto inflacionário $(\pi t)$}
 
 
 \printbibliography

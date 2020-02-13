@@ -252,41 +252,41 @@ Como é impossível obter os valores reais de $\sigma^2$, iremos calcular ele a 
 Sendo $( n - 2 )$ o número de \textit{graus de liberdade} dos estimadores. O grau de liberdade representa o número de observações amostrais independentes. Este valor é obtido pelo número de observações $n$ menos o número de restrições independentes $(\beta_1, \beta_2)$. Portanto a regra que podemos estabelecer é a seguinte, sendo $k$ o número de variáveis do modelo:
 
 \begin{equation}
-  Gº liberdade = n - k
+Gº liberdade = n - ks   
 \end{equation}
 
 Com nossa estimativa de $\sigma^2$ podemos agora calcular as variâncias estimadas dos coeficientes:
 
 \begin{align}
-    & \hat{Var} (\hat{\beta_1}) = \frac{\hat{\sigma^2}}{\sum \limits^{n}_{i = 1} (x_i - \overline{x})^2} \\
-    & \hat{Var}(\hat{\beta_0}) = \frac{\hat{\sigma^2}}{\sum \limits (x_i - \overline{x})^2} \frac{\sum \limits^{n}_{i = 1} x_i^2}{n}
+& \hat{Var} (\hat{\beta_1}) = \frac{\hat{\sigma^2}}{\sum \limits^{n}_{i = 1} (x_i - \overline{x})^2} \\
+& \hat{Var}(\hat{\beta_0}) = \frac{\hat{\sigma^2}}{\sum \limits (x_i - \overline{x})^2} \frac{\sum \limits^{n}_{i = 1} x_i^2}{n}
 \end{align}
 
 E também o \textit{erro padrão} dos estimadores:
 
 \begin{align}
-    & Ep ({\beta_1}) = \frac{\sigma^2}{\sqrt{\sum \limits^{n}_{i=1} x_i^2}} \\
+    & Ep (\hat{\beta_1}) = \frac{\sigma^2}{\sqrt{\sum \limits^{n}_{i=1} x_i^2}} \\
     & Ep (\hat{\beta_0}) = \sqrt{\frac{\sum \limits^{n}_{i=1} x_i^2}{n \sum \limits^{n}_{i=1} x_i^2}} \sigma
 \end{align}
 
 Para entendermos o valor dos graus de liberdade, temos que lembrar o processo de minimização dos quadrados dos resíduos. Pelo \emph{MQO}, buscamos minimizar os resíduos do nosso modelo:
 
 \begin{equation}
-  min \sum \limits^{n}_{i=1} (Y_i - \beta_0 + \beta_1 X + u)
+min \sum \limits^{n}_{i=1} (Y_i - \beta_0 + \beta_1 X + u)
 \end{equation}
 
 Temos as seguintes condições de primeira ordem:
 
 \begin{align}
-    & \sum \limits^{n}_{i=1} (Y_i - - \beta_0  \beta_1 X_i) = 0 \label{cpo1} \\
-    & \sum \limits^{n}_{i=1} X_i (Y_i - - \beta_0  \beta_1 X_i) = 0 \label{cpo2} \\
+& \sum \limits^{n}_{i=1} (Y_i - - \beta_0  \beta_1 X_i) = 0 \label{cpo1} \\
+& \sum \limits^{n}_{i=1} X_i (Y_i - - \beta_0  \beta_1 X_i) = 0 \label{cpo2} \\
 \end{align}
 
 Se relembrarmos que:  $ \hat{u}_i = Y_i - \hat{\beta_0} - \hat{\beta_1} X_i = 0$. Então as equações \ref{cpo1} e \ref{cpo2} podem ser reescritas da seguinte forma:
 
 \begin{align}
-  & \sum \limits^{n}_{i=1} \hat{u}_i = 0 \\
-  &\sum \limits^{n}_{i=1} X_i \hat{u}_i = 0 \\
+& \sum \limits^{n}_{i=1} \hat{u}_i = 0 \\
+&\sum \limits^{n}_{i=1} X_i \hat{u}_i = 0 \\
 \end{align}
 
 Essas condições implicam duas \emph{restrições} ao modelo, e por isso teremos $N - 2$ graus de liberdade. Os graus de liberdade garantem que a variância estimada é não enviesada.
@@ -294,29 +294,11 @@ Essas condições implicam duas \emph{restrições} ao modelo, e por isso teremo
 \section{Regressão sem intercepto}
 
 Supondo que o verdadeiro modelo é: $Y = \beta_1 X + u$ e que as hipóteses usuais se aplicam. Nossa função regressão populacional seria a seguinte:
-
 \begin{equation}
   E (Y|X) = \beta_1 X
-\end{equation}
-
-Teríamos então uma reta com valor médio 0 quando $X = 0$. E se tivéssemos uma regressão sem $\beta_{1}$, teríamos então uma reta com somente a média de Y, visto que, na equação \ref{beta0chapeu} se $\beta_1 = 0 \rightarrow \beta_{0} = \overline{Y}$. 
-
-
   
-\section{Inferência}
-  Como temos várias amostras possíveis dada certa população
-  consequentemente possuímos vários $\Hat{\beta}$ possíveis
-  dependendo da amostra utilizada para estimação. Então podemo
-  abstrair que tais valores de $\Hat{\beta}$ possuem um
-  distribuição. Nossa nova hipótese especifica as distribuições
-  do modelo:
-
-\begin{align}
-  &   u ~ N (0,\sigma^2)\\
-  &   y ~ N (\beta_0 + \beta_1 X, \sigma^2)\\  
-  &   \Hat{\beta} ~ N (\beta, Var (\Hat{\beta}))
-\end{align}
-
+  
+  
 \printbibliography
 
 \end{document}

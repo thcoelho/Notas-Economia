@@ -1,0 +1,82 @@
+\documentclass[12pt,a4paper,oneside,brazil]{abntex2}
+
+% Pacotes que serão utilizados%
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+
+% Informações do documento %
+\title{Notas Econometria I}
+\author{Thiago Oliveira Coelho}
+\date{\today}
+
+
+
+\begin{document}
+\pagestyle{plain}
+\pagenumbering{arabic}
+
+\maketitle
+
+\tableofcontents
+
+\chapter{Introdução a séries de tempo}
+
+Um processo estocástico (aleatório), ou uma série temporal, é uma sequência de variáveis aleatórias indexadas pelo tempo. Cada coleta de dados em um certo substrato de tempo é chamado de \emph{realização}. Estas séries podem ser estáticas ou dinâmicas.
+
+\section{Estática}
+
+\begin{equation}
+ Y_t = \beta_0 + Z_t + u_t
+\end{equation}
+
+Uma série estática é aquela na qual o $Y_t$ é afetado por variáveis independentes somente no mesmo tempo que esta, ou seja, por $Z_t$.
+
+\section{Não-Estática}
+
+\begin{equation}
+ Y_t = \beta_0 + Z_t + Z_{t-1} + u_t
+\end{equation}
+  
+Nos modelos não estáticos, $Y_t$ responde a variáveis independentes de tempos anteriores, como por exemplo $Z_{t-1}$.
+
+\subsection{Lag}
+O \emph{lag} é a defasagem apresentada pelo modelo, o que significa que, por exemplo, um lag de ordem $5$, indica que a variável dependente é afetada pela variável independente nos últimos cinco períodos.
+
+\subsection{Impacto}
+
+\begin{equation}
+\delta_1 = Y_t - Y_{t-1} 
+\end{equation}
+
+O $\delta$ é chamado de propensão de impacto, e demonstra a alteração em $Y$ decorrente de mudanças no tempo. No exemplo, é utilizado $\delta_1$, mas o substrato depende da distância entre as realizações. Por exemplo: $\delta_2 = Y_{t+2} - Y_{t}$. A soma de todos os $\delta$ resulta no que chamamos de \emph{Propensão de Longo Prazo (PLP)}:
+
+\begin{equation}
+    PLP = \delta_0 + \delta_1 + \delta_2 + ... + \delta_k
+\end{equation}
+
+\section{Tendência}
+
+Se $Y$ possui uma tendência ao longo do tempo, se adiciona o valor de $t$ as variáveis independentes. Ao se identificar o efeito de \emph{sazonalidade}, de modo semelhante, se adiciona dessa vez uma \emph{dummy}, que indica quando a sazonalidade está presente. Se a variação é constante, admitimos que a tendência é exponencial, o que resulta num modelo da seguinte forma:
+
+\begin{equation}
+    Y_t = e^{\beta_{0t} + \beta_{1t} + ... + \beta_{nt} + u_t}
+\end{equation}
+
+Que ao ser linearizado se torna:
+
+\begin{equation}
+    \log{Y_t} = \beta_{0t} + \beta_{1t} + ... + \beta_{nt} + u_t
+\end{equation}
+
+Neste caso, podemos obter uma aproximação das taxas de crescimento com $\log{Y_t} - \log{Y_{t-1}}$.
+
+
+
+\end{document}
